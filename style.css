@@ -1,0 +1,48 @@
+/*___________FONTS______________*/
+
+@font-face {
+    font-family: "Expletus Sans Bold";
+    src: url("../fonts/ExpletusSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+
+/*________STYLE___________*/
+
+body {
+  background-color: rgb(255,215,35);
+  width: auto;
+}
+
+h1 {
+  color: rgb(74,173,108);
+  font-family: "Expletus Sans Bold";
+  font-size: 3rem;
+  text-align: left;
+}
+
+h2 {
+  color: rgb(19,124,55);
+  font-family: "Open Sans Light";
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+
+p {
+  font-family: "Open Sans Regular";
+  font-size: 1rem;
+}

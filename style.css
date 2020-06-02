@@ -29,7 +29,7 @@ body {
 
 h1 {
   color: rgb(74,173,108);
-  font-family: "Expletus Sans Bold";
+  font-family: "Expletus Sans Bold", Verdana;
   font-size: 3rem;
   text-align: left;
 }
@@ -45,4 +45,5 @@ h2 {
 p {
   font-family: "Open Sans Regular";
   font-size: 1rem;
+  color: rgb(19,124,55);
 }

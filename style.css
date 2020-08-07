@@ -195,16 +195,15 @@ body {
   flex-shrink: 0;
 }
 
-.box-rightSide{
-  width: 20%;
-}
-
 .pic{
   width: 100%;
   max-width: 300px;
   height: auto;
 }
 
+.lebenslauf{
+  
+}
 
 
 #impressum{

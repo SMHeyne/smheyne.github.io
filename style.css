@@ -83,6 +83,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
 }
 
 .drittel{
@@ -92,10 +94,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.box{
   padding: 0.5em 1em;
+  box-sizing: border-box;
 }
 
 #lines-box{
@@ -192,6 +192,7 @@ body {
 
 #impressum{
   bottom: 2rem;
+  padding-bottom: 2em;
 }
 
 #whitebox-bt{
@@ -199,13 +200,14 @@ body {
   margin-left: 5rem;
   background-color: white;
   position: relative;
+  z-index: 103;
 }
 
 #hl-bt{
   z-index: 102;
   border-top: 6px solid rgb(255,215,35);
   position: relative;
-  height: 7rem;
+  height: 2rem;
   width: 100%;
   background-color: white;
   bottom: 0;
@@ -236,4 +238,10 @@ body {
   p{
     font-size: 3em;
   }
+
+  .row {
+    flex-direction: column;
+  }
+
+
 }

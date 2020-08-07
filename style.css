@@ -44,12 +44,17 @@ h3 {
   text-align: left;
 }
 
+h4 {
+  color: rgb(19,124,55);
+  font-family: "Open Sans Bold";
+  font-size: 1.2em;
+}
+
 h6 {
   color: rgb(19,124,55);
   font-family: "Open Sans Light";
   font-size: 0.8em;
 }
-
 
 p {
   font-family: "Open Sans Regular";
@@ -57,7 +62,7 @@ p {
   color: rgb(19,124,55);
 }
 
-h1, h2, h3, h6 {
+h1, h2, h3, h4, h6, p {
   margin: 0;
   text-align: left;
 }
@@ -68,34 +73,46 @@ body {
   margin: 0;
 }
 
+.container{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  margin: 0 5rem;
+  min-height: 85vh;
+}
+
 .row{
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 0;
   flex-flow: row wrap;
   margin: auto;
+  flex-direction: row;
 }
 
 .zweidrittel{
   width: 66%;
   float: left;
-  background-color: rgba(10,10,30,0.1);
-  display: flex;
-  flex-direction: row;
+  border: 1px solid rgba(100,30,30,0.8);
+  display: inline-flex;
   flex-wrap: wrap;
   padding: 0.5em 1em;
   box-sizing: border-box;
+  align-items: flex-start;
 }
 
 .drittel{
   width: 32%;
-  background-color: rgba(10,10,10,0.1);
+  border: 1px solid rgba(10,100,10,0.8);
   float: left;
-  display: flex;
-  flex-direction: row;
+  display: block;
   flex-wrap: wrap;
   padding: 0.5em 1em;
   box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 0;
 }
 
 #lines-box{
@@ -120,7 +137,7 @@ body {
   right: 0;
   z-index: 106;
   width: 10rem;
-  height: 7.5rem;
+  height: 7.35rem;
 }
 
 #NameNav{
@@ -159,15 +176,7 @@ body {
   height: 100%;
 }
 
-.container{
-  display: flex;
-  margin: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 1rem 2rem;
-  margin: 0 5rem;
-  min-height: 90vh;
-}
+
 
 .row:after {
   content: "";
@@ -180,15 +189,23 @@ body {
 }
 
 .haupttext{
-  max-width: 800px;
+  max-width: 650px;
   min-width: 200px;
   display: block;
-
+  flex-shrink: 0;
 }
 
 .box-rightSide{
   width: 20%;
 }
+
+.pic{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+
 
 #impressum{
   bottom: 2rem;
@@ -207,7 +224,7 @@ body {
   z-index: 102;
   border-top: 6px solid rgb(255,215,35);
   position: relative;
-  height: 2rem;
+  height: 0.1rem;
   width: 100%;
   background-color: white;
   bottom: 0;

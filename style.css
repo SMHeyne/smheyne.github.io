@@ -113,7 +113,7 @@ body {
   z-index: 105;
 }
 
-#whitebox{
+#whitebox-top{
   display: block;
   background-color: white;
   position: fixed;
@@ -144,7 +144,7 @@ body {
   display: block;
   background-color: white;
   width: 4.95rem;
-  z-index: 100;
+  z-index: 104;
   border-left: 6px solid rgb(19,124,55);
   height: 100%;
 }
@@ -161,9 +161,11 @@ body {
 }
 
 .container{
-  width: 85%;
   display: flex;
   margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem 6rem;
 }
 
 .row:after {
@@ -193,14 +195,22 @@ body {
   bottom: 2rem;
 }
 
+#whitebox-bt{
+  bottom: 0;
+  margin-left: 5rem;
+  background-color: white;
+  position: relative;
+}
+
 #hl-bt{
   z-index: 102;
   border-top: 6px solid rgb(255,215,35);
-  position: absolute;
-  height: 10rem;
+  position: relative;
+  height: 7rem;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
 }
-
-
 
 
 /*_____MOBILE___________*/

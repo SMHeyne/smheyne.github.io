@@ -202,7 +202,33 @@ body {
 }
 
 .lebenslauf{
-  
+  background-color: rgb(255,215,35);
+  max-width: 800px;
+  width: 70%;
+  min-width: 200px;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+h1 {
+  color: rgb(74,173,108);
+  font-family: "Expletus Sans Bold", Verdana;
+  font-size: 6em;
+  text-align: left;
+}
+
+h2 {
+  color: rgb(19,124,55);
+  font-family: "Open Sans Light";
+  font-size: 3em;
+  text-align: left;
+}
+
+h3 {
+  color: white;
+  font-family: "Expletus Sans Bold";
+  font-size: 2.5em;
+  text-align: left;
 }
 
 

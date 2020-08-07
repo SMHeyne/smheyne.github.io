@@ -65,15 +65,15 @@ body {
 }
 
 .row{
-  width: auto;
+  width: 100%;
   padding: 1rem;
-  width: auto;
   padding-bottom: 0;
   flex-flow: row wrap;
+  margin: auto;
 }
 
 .zweidrittel{
-  width: 66.666%;
+  width: 66%;
   float: left;
   background-color: rgba(10,10,30,0.1);
   display: flex;
@@ -82,20 +82,13 @@ body {
 }
 
 .drittel{
-  width: 33.3333%;
+  width: 32%;
   background-color: rgba(10,10,10,0.1);
   float: left;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
 
-.ganz{
-  width: 100%;
-  display: table;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 1rem 6rem;
 }
 
 
@@ -120,7 +113,7 @@ body {
   top: 0;
   right: 0;
   z-index: 106;
-  width: 5rem;
+  width: 10rem;
   height: 7.5rem;
 }
 
@@ -165,7 +158,8 @@ body {
   margin: auto;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 1rem 6rem;
+  padding: 1rem 2rem;
+  margin: 0 5rem
 }
 
 .row:after {
@@ -180,11 +174,8 @@ body {
 
 .haupttext{
   max-width: 800px;
-  width: 70%;
   min-width: 200px;
-  margin-left: 3em;
-  margin-right: 3em;
-  margin-top: 7rem;
+  display: block;
 }
 
 .box-rightSide{

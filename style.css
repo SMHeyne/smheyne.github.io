@@ -25,7 +25,7 @@
 h1 {
   color: rgb(255,215,35);     /*gelb*/
   font-family: "Expletus Sans Bold", Verdana;
-  font-size: 6em;
+  font-size: 5em;
   text-align: left;
   margin-top: 0;
 }
@@ -33,14 +33,14 @@ h1 {
 h2 {
   color: rgb(19,124,55);    /*grün*/
   font-family: "Open Sans Light";
-  font-size: 3em;
+  font-size: 2.8em;
   text-align: left;
 }
 
 h3 {
   color: rgb(255,215,35);
   font-family: "Expletus Sans Bold";
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-align: left;
 }
 
@@ -53,7 +53,7 @@ h6 {
 
 p {
   font-family: "Open Sans Regular";
-  font-size: 1.5em;
+  font-size: 1em;
   color: rgb(19,124,55);
 }
 

@@ -20,99 +20,7 @@
   src: url("../fonts/OpenSans-Light.ttf");
 }
 
-/*________STYLE___________*/
-
-/*_______BROWSER________*/
-
-body {
-  margin: 0;
-}
-
-.haupttext{
-  max-width: 800px;
-  width: 70%;
-  min-width: 200px;
-  margin-left: 3em;
-  margin-right: 3em;
-}
-
-.row{
-  width: auto;
-  padding: 1rem;
-  width: 100%;
-  position: fixed;
-  padding-bottom: 0;
-
-}
-
-.zweidrittel{
-  width: 66.666%;
-  float: left;
-  background-color: purple;
-  display: flex;
-  flex-direction: row;
-}
-
-.drittel{
-  width: 33.3333%;
-  background-color: green;
-  float: left;
-  display: flex;
-  flex-direction: row;
-}
-
-#lines{
-  float:right;
-  border-left: 6px solid rgb(19,124,55);
-  margin-top: -1rem;
-  border-bottom: 6px solid rgb(19,124,55);
-  margin-right: 5rem;
-  display: block;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-#NameNav{
-  font-size: 2em;
-  color: rgb(19,124,55);
-  text-align: center;
-  font-family: "Expletus Sans Bold";
-  float: right;
-  background-color: rgb(255,215,35);
-  max-width: 350px;
-  margin: 1rem;
-  padding: 0.8rem 2rem;
-  margin-top: 3rem;
-}
-
-.container{
-  width: 100%;
-}
-
-.main-box{
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-bottom: 10rem;
-  margin-top: -6rem;
-  border-right: 6px solid rgb(19,124,55);
-  border-left: 6px solid rgb(255,215,35);
-  border-bottom: 6px solid rgb(255,215,35);
-  float: right;
-  height: 100%;
-  width: 90%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-*, ::before, ::after{
-  box-sizing: inherit;
-}
+/*________TEXT DEFINITION___________*/
 
 h1 {
   color: rgb(255,215,35);     /*gelb*/
@@ -148,6 +56,152 @@ p {
   font-size: 1.5em;
   color: rgb(19,124,55);
 }
+
+
+/*_______BROWSER________*/
+
+body {
+  margin: 0;
+}
+
+.row{
+  width: auto;
+  padding: 1rem;
+  width: auto;
+  padding-bottom: 0;
+  flex-flow: row wrap;
+}
+
+.zweidrittel{
+  width: 66.666%;
+  float: left;
+  background-color: rgba(10,10,30,0.1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.drittel{
+  width: 33.3333%;
+  background-color: rgba(10,10,10,0.1);
+  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ganz{
+  width: 100%;
+  display: table;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem 6rem;
+}
+
+
+#lines-box{
+  float:right;
+  border-left: 6px solid rgb(19,124,55);
+  margin-top: -1rem;
+  border-bottom: 6px solid rgb(19,124,55);
+  margin-right: 5rem;
+  display: block;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 105;
+}
+
+#whitebox{
+  display: block;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 106;
+  width: 5rem;
+  height: 7.5rem;
+}
+
+#NameNav{
+  font-size: 2rem;
+  color: rgb(19,124,55);
+  text-align: center;
+  font-family: "Expletus Sans Bold";
+  float: right;
+  background-color: rgb(255,215,35);
+  max-width: 350px;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  z-index: 110;
+}
+
+#vl-r{
+  right: 0;
+  position: fixed;
+  display: block;
+  background-color: white;
+  width: 4.95rem;
+  z-index: 100;
+  border-left: 6px solid rgb(19,124,55);
+  height: 100%;
+}
+
+#vl-l{
+  left: 0;
+  position: fixed;
+  display: block;
+  background-color: white;
+  width: 5rem;
+  z-index: 100;
+  border-right: 6px solid rgb(255,215,35);
+  height: 100%;
+}
+
+.container{
+  width: 85%;
+  display: flex;
+  margin: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*, ::before, ::after{
+  box-sizing: inherit;
+}
+
+.haupttext{
+  max-width: 800px;
+  width: 70%;
+  min-width: 200px;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 7rem;
+}
+
+.box-rightSide{
+  width: 20%;
+}
+
+#impressum{
+  bottom: 2rem;
+}
+
+#hl-bt{
+  z-index: 102;
+  border-top: 6px solid rgb(255,215,35);
+  position: absolute;
+  height: 10rem;
+}
+
+
+
 
 /*_____MOBILE___________*/
 

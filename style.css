@@ -85,6 +85,7 @@ body {
   padding: 1rem 2rem;
   margin: 0 5rem;
   min-height: 85vh;
+  box-sizing: border-box;
 }
 
 .row{
@@ -255,6 +256,10 @@ body {
     margin: 0;
   }
 
+  .zweidrittel{
+    width: 80%;
+  }
+
   .drittel{
     width: 45%;
   }
@@ -280,25 +285,17 @@ body {
 /*_______MOBILE__________*/
 @media only screen and (max-width: 450px) {
   body {
-    width: 90%;
-    margin-left: 3em;
-    margin-right: 3em;
+    width: 100vw;
+    margin-left: 0em;
+    margin-right: 0em;
   }
 
   h1{
-    font-size: 7em;
-  }
-
-  h2{
-    font-size: 5em;
-  }
-
-  h6{
-    font-size: 2em
-  }
-
-  p{
     font-size: 3em;
+  }
+
+  h3{
+    font-size: 1.5em;
   }
 
   .row, .container {
@@ -322,8 +319,19 @@ body {
       margin-top: 2rem;
   }
 
-  .container{
-    margin: 0 1.5rem;
+  #whitebox-top{
+    height: 5.75em;
   }
 
+  .container{
+    width: 100vw;
+  }
+
+  .drittel, .zweidrittel{
+    width: 100%;
+  }
+
+  #whitebox-bt{
+    margin-left: 1.5rem;
+  }
 }

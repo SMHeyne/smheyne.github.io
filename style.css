@@ -95,6 +95,7 @@ body {
   flex-flow: row wrap;
   margin: auto;
   flex-direction: row;
+  display: flex;
 }
 
 .zweidrittel{
@@ -197,7 +198,6 @@ body {
   max-width: 650px;
   min-width: 200px;
   display: block;
-  flex-shrink: 0;
 }
 
 .pic{
@@ -260,7 +260,7 @@ body {
     font-size: 3em;
   }
 
-  .row {
+  .row, .container {
     flex-direction: column;
   }
 

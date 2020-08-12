@@ -127,7 +127,6 @@ body {
 #lines-box{
   float:right;
   border-left: 6px solid rgb(19,124,55);
-  margin-top: -1rem;
   border-bottom: 6px solid rgb(19,124,55);
   margin-right: 5rem;
   display: block;
@@ -136,6 +135,7 @@ body {
   top: 0;
   right: 0;
   z-index: 105;
+  height: 7.5rem;
 }
 
 #whitebox-top{
@@ -146,7 +146,7 @@ body {
   right: 0;
   z-index: 106;
   width: 10rem;
-  height: 7.35rem;
+  height: 7.5rem;
 }
 
 #NameNav{
@@ -159,7 +159,7 @@ body {
   max-width: 350px;
   margin: 1rem;
   padding: 1rem 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   z-index: 110;
 }
 
@@ -251,14 +251,15 @@ body {
   .container {
     flex-direction: column;
     margin: 0;
+    padding: 0;
   }
 
   .zweidrittel{
-    width: 80%;
+    width: 90%;
   }
 
   .drittel{
-    width: 45%;
+    width: 60%;
   }
 
   .someSpace{
@@ -275,6 +276,10 @@ body {
 
   #lines-box{
     margin-right: 3rem;
+  }
+
+  #whitebox-bt{
+    margin-left: 0;
   }
 }
 
@@ -300,7 +305,7 @@ body {
   }
 
   #vl-l{
-    width: 1.5rem;
+    width: 1rem;
   }
 
   #vl-r{
@@ -309,6 +314,7 @@ body {
 
   #lines-box{
     margin-right: 1.5rem;
+    height: 6.5em;
   }
 
   #NameNav{
@@ -317,7 +323,7 @@ body {
   }
 
   #whitebox-top{
-    height: 5.75em;
+    height: 6.5em;
   }
 
   .container{
@@ -326,9 +332,14 @@ body {
 
   .drittel, .zweidrittel{
     width: 100%;
+    padding: 0.5rem 2em;
   }
 
   #whitebox-bt{
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .haupttext{
+    min-width: 0;
   }
 }

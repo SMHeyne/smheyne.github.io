@@ -351,28 +351,30 @@ body {
   }
 
   #vl-l{
-    width: 1.5rem;
+    width: 0.2rem;
   }
 
   #vl-r{
-    width: 1.45rem;
+    width: 0.5rem;
   }
 
   #lines-box{
-    margin-right: 1.45rem;
+    margin-right: 0.5rem;
   }
 
   #NameNav{
       font-size: 1.5rem;
       margin-top: 2rem;
+      padding: 0.7rem 1.2rem;
   }
 
   #whitebox-top{
-    height: 5.75em;
+    height: 5.3em;
   }
 
   .container{
     width: 100vw;
+    padding: 0.1em 0.5em;
   }
 
   .drittel, .zweidrittel{
@@ -380,6 +382,6 @@ body {
   }
 
   #whitebox-bt{
-    margin-left: 1.5rem;
+    margin-left: 0.2rem;
   }
 }

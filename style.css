@@ -22,6 +22,13 @@
 
 /*________TEXT DEFINITION___________*/
 
+body{
+  font-family: "Open Sans Regular";
+  font-size: 1em;
+  color: rgb(19,124,55);
+  overflow: auto;
+}
+
 h1 {
   color: rgb(255,215,35);     /*gelb*/
   font-family: "Expletus Sans Bold", Verdana;
@@ -35,6 +42,8 @@ h2 {
   font-family: "Open Sans Light";
   font-size: 2.8em;
   text-align: left;
+  padding-top: 1.5rem;
+  padding-bottom: 0.2rem;
 }
 
 h3 {
@@ -42,12 +51,21 @@ h3 {
   font-family: "Expletus Sans Bold";
   font-size: 2.2em;
   text-align: left;
+  padding-top: 1rem;
 }
 
 h4 {
   color: rgb(19,124,55);
   font-family: "Open Sans Bold";
   font-size: 1.2em;
+}
+
+h5{
+  color: rgb(255,215,35);
+  font-family: "Expletus Sans Regular";
+  font-size: 1.2em;
+  text-align: left;
+  padding-top: 0.5rem;
 }
 
 h6 {
@@ -62,13 +80,17 @@ p {
   color: rgb(19,124,55);
 }
 
-h1, h2, h3, h4, h6, p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   text-align: left;
 }
 
 a{
   text-decoration: none;
+  font-family: "Open Sans Regular";
+  font-size: 1em;
+  color: rgb(19,124,55);
+
 }
 
 /*_______BROWSER________*/
@@ -197,7 +219,7 @@ body {
 }
 
 .haupttext{
-  max-width: 650px;
+  max-width: 800px;
   min-width: 200px;
   display: block;
   min-height: 40vh
@@ -218,7 +240,7 @@ body {
   margin-right: 3em;
 }
 
-#impressum{
+#footer{
   bottom: 2rem;
   padding-bottom: 2em;
 }

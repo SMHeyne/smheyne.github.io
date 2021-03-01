@@ -105,6 +105,26 @@ ul{
   margin-bottom: 1em;
 }
 
+/*_________Cookies Overlay__________*/
+
+#cookies {
+  position: fixed;
+  display: block;
+  width: 66vw;
+  min-width: 200px;
+  max-width: 800px;
+  height: 10rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 5rem;
+  background-color: rgba(255,215,35,1);
+  z-index: 200;
+  cursor: pointer;
+}
+
 /*_______BROWSER________*/
 
 body {
@@ -280,9 +300,8 @@ body {
 
 @media only screen and (max-width: 1100px) {
   body {
-    width: 90%;
-    margin-left: 3em;
-    margin-right: 3em;
+    width: 100vw;
+    margin: auto;
   }
 
   .container {
@@ -303,15 +322,15 @@ body {
   }
 
   #vl-l{
-    width: 3rem;
+    width: 1.5rem;
   }
 
   #vl-r{
-    width: 3rem;
+    width: 1.5rem;
   }
 
   #lines-box{
-    margin-right: 3rem;
+    margin-right: 1.5rem;
   }
 
   #whitebox-bt{
@@ -326,6 +345,16 @@ body {
 
   .drittel{
     width: 90%;
+  }
+
+  h1{
+    font-size: 4em;
+    padding-top: 1rem;
+  }
+
+  h2{
+    font-size: 2.5em;
+    padding-top: 1rem;
   }
 
 }

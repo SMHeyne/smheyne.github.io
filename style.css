@@ -63,8 +63,8 @@ h3 {
 h4 {
   color: rgb(19,124,55);
   font-family: "Open Sans Bold";
-  font-size: 1.2em;
-  padding-top: 0.5em;
+  font-size: 1.5em;
+  padding-top: 1em;
 }
 
 h5{
@@ -81,14 +81,23 @@ h6 {
   font-size: 0.8em;
 }
 
+h7{
+  color: rgb(255,215,35);
+  font-family: "Open Sans Semibold";
+  font-size: 1.1em;
+  text-align: left;
+}
+
 p {
   font-family: "Open Sans Regular";
   font-size: 1em;
   color: rgb(19,124,55);
 	line-height: 1.7;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, h7, p {
   margin: 0;
   text-align: left;
 }
@@ -103,6 +112,12 @@ a{
 ul{
   margin-top: 0.2em;
   margin-bottom: 1em;
+}
+
+td{
+  vertical-align: top;
+  padding-top: 0.8em;
+  padding-right: 0.2em;
 }
 
 /*_________Cookies Overlay__________*/
@@ -146,16 +161,14 @@ body {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 0;
-  flex-flow: row wrap;
   margin: auto;
-  flex-direction: row;
-  display: flex;
 }
 
 .zweidrittel{
   width: 66%;
   float: left;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 0.5em 1em;
   box-sizing: border-box;
@@ -165,7 +178,8 @@ body {
 .drittel{
   width: 32%;
   float: left;
-  display: block;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 0.5em 1em;
   box-sizing: border-box;
@@ -238,8 +252,6 @@ body {
   height: 100%;
 }
 
-
-
 .row:after {
   content: "";
   display: table;
@@ -263,6 +275,13 @@ body {
   height: auto;
 }
 
+.logo{
+  height: 23px;
+  width: auto;
+  padding-right: 0.2em;
+  padding-top: 0.1em;
+}
+
 .lebenslauf{
   background-color: rgb(255,215,35);
   max-width: 800px;
@@ -272,9 +291,23 @@ body {
   margin-right: 3em;
 }
 
+#pictoright{
+  float: right;
+}
+
+#resume{
+  /*only used when smaller!*/
+}
+
 #footer{
   bottom: 2rem;
   padding-bottom: 2em;
+  width: 100%;
+
+  flex-flow: wrap;
+  margin: auto;
+  flex-direction: row;
+  display: flex;
 }
 
 #whitebox-bt{
@@ -317,6 +350,11 @@ body {
     width: 45%;
   }
 
+
+  #resume{
+    width: 80%;
+  }
+
   .someSpace{
     padding-top: 0;
   }
@@ -334,7 +372,7 @@ body {
   }
 
   #whitebox-bt{
-    margin-left: 0;
+    margin-left: 1.5rem;
   }
 }
 
@@ -344,6 +382,9 @@ body {
   }
 
   .drittel{
+    width: 90%;
+  }
+  #resume{
     width: 90%;
   }
 
@@ -407,7 +448,7 @@ body {
     padding: 0.1em 0.5em;
   }
 
-  .drittel, .zweidrittel{
+  .drittel, .zweidrittel, .resume{
     width: 100%;
   }
 

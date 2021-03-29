@@ -20,10 +20,11 @@
   src: url("./fonts/OpenSans-Light.ttf");
 }
 
-@@font-face {
+@font-face {
   font-family: "Open Sans Semibold";
   src: url("./fonts/OpenSans-Semibold.ttf");
 }
+
 /*________TEXT DEFINITION___________*/
 
 body{
@@ -122,23 +123,47 @@ td{
 
 /*_________Cookies Overlay__________*/
 
-#cookies {
+#cookies{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(255,215,35,0.6);
+  z-index: 200;
+}
+
+#cookiemain {
   position: fixed;
-  display: block;
   width: 66vw;
+  display: block;
   min-width: 200px;
   max-width: 800px;
-  height: 10rem;
+  min-height: 10rem;
+  max-height: 30rem;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   margin: auto;
-  margin-bottom: 5rem;
-  background-color: rgba(255,215,35,1);
-  z-index: 200;
+  background-color: white;
+  z-index: 205;
   cursor: pointer;
 }
+
+.cookie-text{
+    padding: 2rem;
+}
+
+button{
+  display: flex;
+  margin: 0 2rem;
+  border: none;
+  background-color: rgb(255,215,35);
+  float: left;
+}
+
+
 
 /*_______BROWSER________*/
 
@@ -297,7 +322,7 @@ body {
 }
 
 #resume{
-  /*only used when smaller!*/
+/*only used when smaller!*/
 }
 
 #footer{

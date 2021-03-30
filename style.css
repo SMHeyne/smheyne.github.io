@@ -70,7 +70,7 @@ h4 {
 
 h5{
   color: rgb(19,124,55);
-  font-family: "Open Sans Semibold";
+  font-family: "Open Sans Light";
   font-size: 1.2em;
   text-align: left;
   padding:  0.2rem 1rem;
@@ -78,15 +78,17 @@ h5{
   background-color: rgb(255,215,35);
 }
 
+/*
 h6 {
   color: rgb(19,124,55);
   font-family: "Open Sans Light";
   font-size: 0.8em;
 }
+*/
 
-h7{
+h6{
   color: rgb(255,215,35);
-  font-family: "Open Sans Semibold";
+  font-family: "Open Sans Light";
   font-size: 1em;
   text-align: left;
   padding-left: 0.5rem;

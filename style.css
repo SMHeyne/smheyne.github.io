@@ -85,22 +85,6 @@ h6 {
   font-size: 0.8em;
 }
 */
-h1, h2, h3, h4, h5, h6, h7 p {
-  margin: 0;
-  text-align: left;
-}
-
-h6{
-  color: rgb(255,215,35);
-  font-family: "Open Sans Light";
-  font-size: 1em;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 0.1rem;
-  background-color: rgba(19,124,55, 1);
-  margin-top: 0.25rem;
-  margin-bottom: 0.1rem;
-}
 
 p {
   font-family: "Open Sans Regular";
@@ -111,6 +95,22 @@ p {
   padding-bottom: 0.5em;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  text-align: left;
+}
+
+h6{
+  color: rgb(19,124,55);
+  font-family: "Open Sans Light";
+  font-size: 1em;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.1rem;
+  background-color: rgb(255,215,35);
+  margin-top: 0.25rem;
+  margin-bottom: 0.1rem;
+}
 
 
 a{

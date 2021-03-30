@@ -47,7 +47,7 @@ h1 {
 h2 {
   color: rgb(19,124,55);    /*grün*/
   font-family: "Open Sans Light";
-  font-size: 2.8em;
+  font-size: 3em;
   text-align: left;
   padding-top: 1.5rem;
   padding-bottom: 0.2rem;
@@ -56,7 +56,7 @@ h2 {
 h3 {
   color: rgb(255,215,35);
   font-family: "Expletus Sans Bold";
-  font-size: 2.2em;
+  font-size: 2.5em;
   text-align: left;
   padding-top: 1rem;
 }
@@ -69,11 +69,13 @@ h4 {
 }
 
 h5{
-  color: rgb(255,215,35);
+  color: rgb(19,124,55);
   font-family: "Open Sans Semibold";
   font-size: 1.2em;
   text-align: left;
-  padding-top: 0.5rem;
+  padding:  0.2rem 1rem;
+  margin-top: 0.5rem;
+  background-color: rgb(255,215,35);
 }
 
 h6 {
@@ -85,8 +87,11 @@ h6 {
 h7{
   color: rgb(255,215,35);
   font-family: "Open Sans Semibold";
-  font-size: 1.1em;
+  font-size: 1em;
   text-align: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: rgb(19,124,55);
 }
 
 p {

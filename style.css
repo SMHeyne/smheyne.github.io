@@ -165,9 +165,13 @@ td{
   background-color: white;
   z-index: 205;
   padding-top: 2rem;
+  padding-bottom: 0.2em;
   align-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  border: rgba(255,215,35,0.3);
+  border-style: solid;
+  border-bottom-style: none;
 }
 
 .cookie-flex{

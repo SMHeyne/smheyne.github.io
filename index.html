@@ -94,13 +94,18 @@
 
   <div id="cookies">
     <div id="cookiemain">
-      <div class="cookie-text">
+      <div class="cookie-flex">
         <h1>Cookies</h1>
-        <p><h4>No cookies are used on this website.</h4><br>
-          But if you wish to have some, you can find a recipe when clicking the left button. Otherwise you can just close this message. </p>
       </div>
-      <button id="recipe" onclick="off()" name="recipe"><p><a href="recipe.html">To the recipe!</a></p></button>
-      <button id="close" onclick="off()" type="" name="close"><p>Close it.</p></button>
+      <div class="cookie-flex">
+        <h4>No cookies are used on this website.</h4>
+      </div>
+      <div class="cookie-flex" style="flex-flow: column;">
+        <p> But if you wish to have some, you can find a recipe when clicking below. <br> Otherwise you can just close this message.</p>
+        <p id="recipe" onclick="off()" name="recipe"><a href="recipe.html">→ To the recipe!</a></p>
+      </div>
+
+      <button id="close" onclick="off()" type="" name="close"><h4 style="padding: 0.1em 0.5em;">x</h4></button>
     </div>
   </div>
 

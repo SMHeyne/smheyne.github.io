@@ -139,10 +139,10 @@ td{
 /*_________Cookies Overlay__________*/
 
 #cookies{
-  position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 25%;
   margin: auto;
   background-color: rgba(255,215,35,0.6);
   z-index: 200;
@@ -150,32 +150,40 @@ td{
 
 #cookiemain {
   position: fixed;
-  width: 66vw;
-  display: block;
+  width: 90vw;
+  display: flex;
   min-width: 200px;
-  max-width: 800px;
-  min-height: 10rem;
-  max-height: 30rem;
-  top: 0;
+  /*max-width: 800px;*/
+  min-height: 8rem;
+  /*max-height: 35rem;*/
+  /*top: 0;*/
   left: 0;
   bottom: 0;
   right: 0;
   margin: auto;
   background-color: white;
   z-index: 205;
-  cursor: pointer;
+  padding-top: 2rem;
+  align-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.cookie-text{
-    padding: 2rem;
+.cookie-flex{
+  display: flex;
+  margin: 0 1.2rem;
 }
 
 button{
   display: flex;
-  margin: 0 2rem;
+  /*margin: 1rem 2rem;*/
   border: none;
   background-color: rgb(255,215,35);
   float: left;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.2rem;
 }
 
 
@@ -451,7 +459,7 @@ body {
   }
 
   h1{
-    font-size: 3em;
+    font-size: 2.8em;
   }
 
   h3{

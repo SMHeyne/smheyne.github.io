@@ -98,6 +98,7 @@ p {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   text-align: left;
+  z-index: 50;
 }
 
 h6{
@@ -340,6 +341,14 @@ body {
   margin-right: 3em;
 }
 
+#background_pic{
+  position: fixed;
+  right: 5rem;
+  top: 12rem;
+  max-height: 500px;
+  min-height: 80px;
+}
+
 #pictoright{
   float: right;
 }
@@ -423,7 +432,13 @@ body {
   #whitebox-bt{
     margin-left: 1.5rem;
   }
-}
+
+  #background_pic{
+    position: fixed;
+    right: 1.5rem;
+    top: 10rem;
+    max-width: 150px;
+  }
 
 @media only screen and (max-width: 700px) {
   .zweidrittel{
@@ -496,6 +511,14 @@ body {
     width: 100vw;
     padding: 0.1em 0.5em;
   }
+
+  #background_pic{
+    position: fixed;
+    right: 0.5rem;
+    top: 8rem;
+    max-width: 100px;
+    height: auto;
+    }
 
   .drittel, .zweidrittel, .resume{
     width: 100%;

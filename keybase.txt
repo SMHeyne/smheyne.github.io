@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/smheyne
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://smheyne.de
+  * I am smheyne (https://keybase.io/smheyne) on keybase.
+  * I have a public key ASDXHOTGrIM9q2lo7w5CcdPS6U7MOMj4BGRoNgYtNpyFIgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d71ce4c6ac833dab6968ef0e4271d3d2e94ecc38c8f804646836062d369c85220a",
+      "host": "keybase.io",
+      "kid": "0120d71ce4c6ac833dab6968ef0e4271d3d2e94ecc38c8f804646836062d369c85220a",
+      "uid": "1cc19d01556073357387d1d998bd4619",
+      "username": "smheyne"
+    },
+    "merkle_root": {
+      "ctime": 1634552288,
+      "hash": "f6541c36f0053b8964c0aa5b63b0326167a15814871cf9c64e91ed2fc5a3dc6a37aca204110596119e599b6c667452667c11135b755dca8518d4abb17e194f12",
+      "hash_meta": "aafb45f2878eeba594414c0c292d0d81e4bd016a5b703a81ca72358b1f8db544",
+      "seqno": 21005997
+    },
+    "service": {
+      "entropy": "HudumPaw2ClfAMlSHfASYDeX",
+      "hostname": "smheyne.de",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.8.0"
+  },
+  "ctime": 1634552346,
+  "expire_in": 504576000,
+  "prev": "d2d1f4e571ecf6a3a5599a38763c41d72eccc27505cc4b2aa172b7dff014859d",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1xzkxqyDPatpaO8OQnHT0ulOzDjI+ARkaDYGLTachSIKp3BheWxvYWTESpcCCMQg0tH05XHs9qOlWZo4djxB1y7MwnUFzEsqoXK33/AUhZ3EILWhhUnSeY4zG/wE2srPq6olrHR3gl12fESWsTI6yujTAgHCo3NpZ8RAS1PUe+U6fXdcSkspvnbx4snU/6GPKHqenwmuV+ABVsvof/O1LW/oTKXmu99PPciMFMjiyt/7RkVUeN3cYEHjBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP3zrdNq/C0P6fIIVvPWZhS8S3AerYxoiespSuHkh6ZFo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/smheyne
+
+==================================================================

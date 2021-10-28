@@ -191,6 +191,10 @@ button{
   right: 0.2rem;
 }
 
+/*___RECIPE TABLE____*/
+#table_recipe td{
+  padding-right: 0.5em;
+}
 
 
 /*_______BROWSER________*/

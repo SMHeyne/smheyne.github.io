@@ -221,6 +221,17 @@ body {
   margin: auto;
 }
 
+.dreidrittel{
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
 .zweidrittel{
   width: 66%;
   float: left;
@@ -361,9 +372,28 @@ body {
   float: right;
 }
 
-#resume{
-/*only used when smaller!*/
+
+/* Thumbnails for File Downloads*/
+
+.thumbnailDiv{
+  position: relative;
 }
+
+.thumbnail{
+  margin: 0.5rem 1rem;
+  border-style: outset;
+  border-width: 2px;
+  max-width: 90%;
+}
+
+.thumbnailText{
+  position: absolute;
+  margin: 0.5rem 0.8rem;
+  bottom: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255,215,35, 0.6);
+}
+
 
 #footer{
   bottom: 2rem;
@@ -447,6 +477,7 @@ body {
     top: 10rem;
     max-width: 150px;
   }
+}
 
 @media only screen and (max-width: 700px) {
   .zweidrittel{

@@ -44,7 +44,7 @@
     <div class="zweidrittel">
       <div class="haupttext">
           <h2>Hello!</h2>
-          <p>My name is Sabine and I'm a game designer. <br>
+          <p>My name is Sabine and I'm a Game Designer. <br>
             I finished my master's degree in August 2021 and am looking for an oppurtunity to develop my career further. <br>
             My main focus: applied games and topics that might make the world a better place. <br>
           Currently I'm an intern in the games development department at Ravensburger AG.
@@ -85,12 +85,88 @@
           </a>
       </div>
 
+<!--        Project videos       -->      
 
-<!-- Project files soon to come -->
-    <!--
       <div class="dreidrittel">
-        <h4>Other files</h4>
-        <p>Here you can find some more files: builds to try out some small games, rules from an analog game of mine and more.</p>
+        <h4>Project videos</h4>
+        <p>Get an impression about some of my projects.</p>
+      </div>
+
+      <div class="drittel">
+        <h5 id="lutherHead">aproposluther</h5>
+        <a href="#lutherVideo" id="showLuther" onclick="toggleVideo('lutherVideo')">  
+          <div class="thumbnailDiv"> 
+            <img class="thumbnail" src="files\thumbnails\SMH_luther_thumb.png" alt="aproposluther video">
+            <div class="thumbnailText">Click to show the video</div>
+          </div>  
+        </a>
+        <p>Digital installation about Martin Luthers life.</p>
+      </div>
+      
+      <div class="drittel">
+        <h5 id="schauHead">Schau mal!</h5>
+        <a href="#schauVideo" id="showLuther" onclick="toggleVideo('schauVideo')">
+          <div class="thumbnailDiv">
+            <img class="thumbnail" src="files\thumbnails\SMH_SchauMal_thumb.png" alt="Schau mal! video">
+            <div class="thumbnailText">Click to show the video</div>
+          </div>
+        </a>
+        <p>Digital installation for passers-by to consciously perceive their surroundings.</p>
+      </div>
+
+      <div class="drittel">
+        <h5 id="creatureHead">It's a Creature not a Feature</h5>
+        <a href="#creatureVideo" id="showCreature" onclick="toggleVideo('creatureVideo')">
+          <div class="thumbnailDiv">
+            <img class="thumbnail" src="files\thumbnails\SMH_Creature_thumb.png" alt="It's a creature not a feature – video">
+            <div class="thumbnailText">Click to show the video</div>
+          </div>
+        </a>
+        <p>Storyline of our eponymous game, which was created within 24h at the MINFF Jam. |<b>German text</b></p>
+      </div>
+  
+  <!-- aproposluther Video -->
+
+      <div class="dreidrittel videoDiv"  id="lutherVideo">
+        <video class="videoplayer" controls>
+          <source src="files\Projects\HeyneSabineM_aproposluther.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <a href="#lutherHead" style="position: absolute;">
+          <button class="buttonOnVideo" id="hideLuther" onclick="hideVideo('lutherVideo')"><h5>Close</h5></button>
+        </a>
+      </div>
+      
+  <!-- Schau mal Video -->
+      
+      <div class="dreidrittel videoDiv"  id="schauVideo">
+        <video class="videoplayer" controls>
+          <source src="files\Projects\HeyneSabineM_SchauMal_Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <a href="#schauHead" style="position: absolute;">
+          <button class="buttonOnVideo" id="hideLuther" onclick="hideVideo('schauVideo')"><h5>Close</h5></button>
+        </a>
+      </div>
+
+  <!-- Creature not Feature Video -->
+    
+      <div class="dreidrittel videoDiv"  id="creatureVideo">
+        <video class="videoplayer" controls>
+          <source src="files\Projects\HeyneSabineM_CreatureNotFeature_Film.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <a href="#creatureHead" style="position: absolute;">
+          <button class="buttonOnVideo" id="hideCreature" onclick="hideVideo('creatureVideo')"><h5>Close</h5></button>
+        </a>
+      </div>
+
+
+<!-- Project files for download -->
+
+      <div class="dreidrittel">
+        <h4>Downloadable files</h4>
+        <p>Here you can find some files: builds to try out some small games, rules from an analog game of mine and more.</p>
       </div>
 
       <div class="drittel">
@@ -112,9 +188,65 @@
               <div class="thumbnailText">→ Click to download</div>
             </div>
           </a>
-        <p>Download the unity build from our game to play.</p>
+        <p>Download the unity build to play.</p>
       </div>
-    -->
+
+      <div class="drittel">
+        <h5>Geliefert</h5>
+          <a href="files\Projects\HeyneSabineM_Geliefert_Spielregeln.pdf" download hreflang="de">
+            <div class="thumbnailDiv">
+              <img class="thumbnail" src="files\thumbnails\SMH_Geliefert_thumb.png" alt="Instruction manual: Geliefert">
+              <div class="thumbnailText">→ Click to download</div>
+            </div>
+          </a>
+        <p>Download the pdf manual from the board game "Geliefert". | <b>German only </b></p>
+      </div>
+
+      <div class="drittel">
+        <h5>Hamstermarkt</h5>
+          <a href="files\Projects\HeyneSabineM_Hamstermarkt_Build.zip" download hreflang="en">
+            <div class="thumbnailDiv">
+              <img class="thumbnail" src="files\thumbnails\SMH_Hamstermark_thumb.png" alt="unity build: Hamstermarkt">
+              <div class="thumbnailText">→ Click to download</div>
+            </div>
+          </a>
+        <p>Download the unity build to play.</p>
+      </div>
+
+      <div class="drittel">
+        <h5>H.O.R.N. of Happiness</h5>
+          <a href="files\Projects\HeyneSabineM_H.O.R.N.-Of-Happiness.zip" download hreflang="en">
+            <div class="thumbnailDiv">
+              <img class="thumbnail" src="files\thumbnails\SMH_HORN_thumb.png" alt="PDF manual H.O.R.N. of Happiness">
+              <div class="thumbnailText">→ Click to download</div>
+            </div>
+          </a>
+        <p>This analog game was developed at the Global Game Jam 2018. <a href="https://globalgamejam.org/2018/games/horn-happiness" target="_blank">→ Click here to visit the GGJ webpage.</a></p>
+      </div>
+            
+      <div class="drittel">
+        <h5>Night as Day</h5>
+          <a href="files\Projects\HeyneSabineM_Night-as-Day.zip" download hreflang="en">
+            <div class="thumbnailDiv">
+              <img class="thumbnail" src="files\thumbnails\SMH_night-day_thumb.png" alt="unity build: Night as Day">
+              <div class="thumbnailText">→ Click to download</div>
+            </div>
+          </a>
+        <p>This 2D game was developed at the Global Game Jam 2022. <a href="https://globalgamejam.org/2022/games/night-day-5" target="_blank">→ Click here to visit the GGJ webpage.</a></p>
+      </div>
+
+      <div class="drittel">
+        <h5>It's a creature not a feature: Game</h5>
+          <a href="files\Projects\HeyneSabineM_CreatureNotFeature_Build.zip" download hreflang="en">
+            <div class="thumbnailDiv">
+              <img class="thumbnail" src="files\thumbnails\SMH_CreatureGame_thumb.png" alt="unity build: Creature not a feature">
+              <div class="thumbnailText">→ Click to download</div>
+            </div>
+          </a>
+        <p>This project was developed within 24h at the MINFF Jam at our university. <br>
+          Download the unity build to play.</p>
+      </div>
+
     </div>
   </div>
 
@@ -136,8 +268,8 @@
         <div class="drittel">
           <h5>More</h5>
           <p>
-            <a href="https://github.com/SMHeyne/Portfolio" target="_blank" rel="noopener noreferrer">→ Portfolio as PDF + Projects on github</a> <br>
-              <img src="images/LI-In-Bug.png" alt="LinkedIn" class="logo"><a href="https://www.linkedin.com/in/smheyne/">Visit my LinkedIn Profile</a>
+            <img src="images/LI-In-Bug.png" alt="LinkedIn" class="logo"><a href="https://www.linkedin.com/in/smheyne/">Visit my LinkedIn Profile</a> <br>
+            <img src="images\GitHub-Mark-32px.png" alt="GitHub" class="logo"><a href="https://github.com/SMHeyne/SMHeyne">Visit my GitHub page</a>
           </p>
         </div>
       </div>
@@ -164,7 +296,9 @@
   </div>
 
 <!-- COOKIES OVERLAY ENDE-->
+
   <script src="cookies.js"></script>
+  <script src="videos.js"></script>
 
 
 </body>

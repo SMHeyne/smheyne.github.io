@@ -180,9 +180,11 @@ td{
 }
 
 button{
-  display: flex;
-  /*margin: 1rem 2rem;*/
   border: none;
+}
+
+#close{
+  display: flex;
   background-color: rgb(255,215,35);
   float: left;
   cursor: pointer;
@@ -191,7 +193,61 @@ button{
   right: 0.2rem;
 }
 
+/* Thumbnails for File Downloads*/
+
+.thumbnailDiv{
+  position: relative;
+}
+
+.thumbnail{
+  margin: 0.5rem 1rem;
+  border-style: solid;
+  border-width: 2px;
+  max-width: 90%;
+}
+
+.thumbnailText{
+  position: absolute;
+  margin: 0.5rem 0.8rem;
+  bottom: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255,215,35, 0.6);
+}
+
+/* Video player for project videos */
+
+.videoplayer{
+  width: 100%;
+  height: auto;
+  z-index: 200;
+  max-width: 1000px;
+}
+
+.videoDiv{
+  visibility: collapse;
+}
+
+.buttonToggleVideo{
+  position: absolute;
+  display: flex;
+  margin: 0.5rem 0.8rem;
+  bottom: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255,215,35, 0.6);
+}
+
+.buttonOnVideo{
+  position: absolute;
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.2rem 0rem;
+  background-color: rgb(255, 215, 35);
+  z-index: 210;
+}
+
+
 /*___RECIPE TABLE____*/
+
 #table_recipe td{
   padding-right: 0.5em;
 }
@@ -371,29 +427,6 @@ body {
 #pictoright{
   float: right;
 }
-
-
-/* Thumbnails for File Downloads*/
-
-.thumbnailDiv{
-  position: relative;
-}
-
-.thumbnail{
-  margin: 0.5rem 1rem;
-  border-style: outset;
-  border-width: 2px;
-  max-width: 90%;
-}
-
-.thumbnailText{
-  position: absolute;
-  margin: 0.5rem 0.8rem;
-  bottom: 1rem;
-  padding: 1.5rem;
-  background-color: rgba(255,215,35, 0.6);
-}
-
 
 #footer{
   bottom: 2rem;

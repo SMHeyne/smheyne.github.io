@@ -78,14 +78,6 @@ h5{
   background-color: rgb(255,215,35);
 }
 
-/*
-h6 {
-  color: rgb(19,124,55);
-  font-family: "Open Sans Light";
-  font-size: 0.8em;
-}
-*/
-
 p {
   font-family: "Open Sans Regular";
   font-size: 1em;
@@ -226,6 +218,7 @@ button{
 
 .videoDiv{
   visibility: collapse;
+  display: none !important;
 }
 
 .buttonToggleVideo{

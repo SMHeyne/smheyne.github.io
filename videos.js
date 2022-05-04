@@ -19,6 +19,7 @@ function showVideo(videoElementId){
 
     videoElement.currentTime = 0;    
     videoDiv.style.visibility = "visible";
+    videoDiv.style.display = "flex";
     videoElement.play();
 }
 
@@ -29,5 +30,6 @@ function hideVideo(videoElementId){
     const videoElement = videoDiv.getElementsByTagName("video")[0];
 
     videoDiv.style.visibility = "collapse";
+    videoDiv.style.display = "none";
     videoElement.pause();
 }

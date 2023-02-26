@@ -432,6 +432,8 @@ body {
 #whitebox-bt{
   bottom: 0;
   margin-left: 5rem;
+  margin-right: 5rem;
+  background-color: white;
   position: relative;
   z-index: 103;
 }
@@ -491,6 +493,7 @@ body {
 
   #whitebox-bt{
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   #background_pic{
@@ -589,6 +592,7 @@ body {
 
   #whitebox-bt{
     margin-left: 0.2rem;
+    margin-right: 0.2rem;
   }
 }
 

@@ -15,6 +15,10 @@
   src: url("./fonts/OpenSans-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("./fonts/OpenSans-Light.ttf");
+}
 
 @font-face {
   font-family: "Open Sans Semibold";

@@ -459,7 +459,7 @@ body {
   padding-left: 5rem;
   padding-right: 5rem;
   background-color: #FCFCFC;
-  position: ;
+  position: relative;
   border-top: 6px solid #FFD96B;
   z-index: 108;
 }

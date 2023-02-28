@@ -225,7 +225,6 @@ button{
   width: auto;
 }
 
-
 /*___RECIPE TABLE____*/
 
 #table_recipe td{
@@ -327,26 +326,6 @@ body {
   z-index: 105;
   border-radius: 0 5px 0 5px;
 }
-/*
-.clearfix {
-  clear: both;
-}
-.clearfix:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-#namebox-top{
-  display: block;
-  background-color: #216966;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 106;
-  height: 7.35rem;
-}
-*/
 
 #yellow-lines-box a{
   font-size: 2rem;
@@ -377,20 +356,6 @@ body {
   border-left: 6px solid #FFD96B;
   height: 100%;
 }
-
-/*
-#vl-l{
-  left: 0;
-  position: fixed;
-  display: block;
-  background-color: #FCFCFC;
-  width: 5rem;
-  z-index: 100;
-  border-right: 6px solid #FFD96B;
-  height: 100%;
-  padding-bottom: 5em;
-}
-*/
 
 .row:after {
   content: "";
@@ -503,12 +468,6 @@ body {
   .someSpace{
     padding-top: 0;
   }
-
-  /*
-  #vl-l{
-    width: 1.5rem;
-  }
-  */
 
   #vl-r{
     width: 1.5rem;
@@ -653,4 +612,10 @@ body {
   padding: 0.2rem 0rem;
   background-color: rgb(255, 215, 35);
   z-index: 210;
+}
+
+/*___Projects with Description__*/
+.descriptionDiv{
+  visibility: collapse;
+  display: none;
 }

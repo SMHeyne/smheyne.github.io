@@ -35,6 +35,7 @@ body{
   word-break: normal;
   word-wrap: break-word;
   background-color: #FFD96B;
+  line-height: 1.6em;
 }
 
 h1 {
@@ -314,6 +315,7 @@ body {
   height: 2rem;
   width: auto;
   margin: 0 1rem;
+  color: #289973;
 }
 
 .someSpace{

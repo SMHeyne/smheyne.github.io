@@ -35,7 +35,6 @@ body{
   word-break: normal;
   word-wrap: break-word;
   background-color: #FFD96B;
-  line-height: 1.6em;
 }
 
 h1 {
@@ -637,6 +636,7 @@ body {
 .descriptionDiv{
   visibility: collapse;
   display: none;
+  line-height: 1.6em;
 }
 
 .toggleDescriptionButton{

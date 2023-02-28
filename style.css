@@ -30,7 +30,7 @@
 body{
   font-family: "Open Sans Regular";
   font-size: 1em;
-  color: rgb(33,105,102);
+  color: #289973;
   overflow: auto;
   word-break: normal;
   word-wrap: break-word;
@@ -122,7 +122,7 @@ a{
 }
 
 a:hover{
-    background-color: rgba(255,215,35, 0.2);
+    background-color: #FFD96B2B;
 }
 
 ul{
@@ -146,7 +146,7 @@ td{
   width: 100%;
   height: 25%;
   margin: auto;
-  background-color: rgba(255,215,35,0.6);
+  background-color: #FFD96BA6;
   z-index: 200;
 }
 
@@ -170,7 +170,7 @@ td{
   align-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  border: rgba(255,215,35,0.3);
+  border: #FFD96BD4;
   border-style: solid;
   border-bottom-style: none;
 }
@@ -217,7 +217,7 @@ button{
   left: 0;
   padding: 0.5rem;
   padding-left: 1.5rem;
-  background-color: rgba(255, 217, 107, 0.8);
+  background-color: #FFD96BDB;
 }
 
 .thumbnailText img{
@@ -275,6 +275,7 @@ body {
   padding: 0.5em 1em;
   box-sizing: border-box;
   align-items: flex-start;
+  z-index: 50;
 }
 
 .zweidrittel{
@@ -286,6 +287,7 @@ body {
   padding: 0.5em 1em;
   box-sizing: border-box;
   align-items: flex-start;
+  z-index: 50;
 }
 
 .drittel{
@@ -297,7 +299,21 @@ body {
   padding: 0.5em 1em;
   box-sizing: border-box;
   align-items: flex-start;
-  flex-shrink: 0;
+}
+
+.projectDiv{
+    min-height: 25rem;
+}
+
+.projectDiv.zweidrittel{
+  border-top: 2px #FFD96B solid;
+  margin-top: 0.2rem;
+}
+
+.downloadIcon img{
+  height: 2rem;
+  width: auto;
+  margin: 0 1rem;
 }
 
 .someSpace{
@@ -342,7 +358,7 @@ body {
 }
 
 #yellow-lines-box a:hover{
-  rgba(255,215,35, 0);
+  background-color: #FFD96B00;
 }
 
 
@@ -402,6 +418,7 @@ body {
   top: 12rem;
   max-height: 500px;
   min-height: 80px;
+  z-index: 0;
 }
 
 #pictoright{
@@ -458,6 +475,10 @@ body {
 
   .drittel{
     width: 45%;
+  }
+
+  .projectDiv{
+      min-height: 20rem;
   }
 
 
@@ -535,10 +556,6 @@ body {
     flex-direction: column;
   }
 
-  #vl-l{
-    width: 0.2rem;
-  }
-
   #vl-r{
     width: 0.5rem;
   }
@@ -602,7 +619,7 @@ body {
   margin: 0.5rem 0.8rem;
   bottom: 1rem;
   padding: 1.5rem;
-  background-color: rgba(255,215,35, 0.6);
+  background-color: #FFD96B94;
 }
 
 .buttonOnVideo{
@@ -610,7 +627,7 @@ body {
   display: flex;
   margin: 0.5rem;
   padding: 0.2rem 0rem;
-  background-color: rgb(255, 215, 35);
+  background-color: #FFD96B;
   z-index: 210;
 }
 
@@ -618,4 +635,12 @@ body {
 .descriptionDiv{
   visibility: collapse;
   display: none;
+}
+
+.toggleDescriptionButton{
+  display: block;
+  margin: 0.5rem 0;
+  color: #289973;
+  background-color: #FFD96B48;
+  padding: 0.2rem 1rem;
 }

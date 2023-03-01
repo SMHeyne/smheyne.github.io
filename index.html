@@ -193,10 +193,10 @@
             </div>
           </a>
 
-          <a href="#schauVideo" id="showLuther" onclick="toggleVideo('schauVideo')">
+          <a href="#schauVideo" id="showSchau" onclick="toggleVideo('schauVideo', this)">
             <div class="thumbnailDiv">
               <img class="thumbnail" src="files\thumbnails\SMH_SchauMal_thumb.png" alt="Schau mal! video">
-              <div class="thumbnailText">Click to toggle the video</div>
+              <div class="thumbnailText">Click to show the video</div>
             </div>
           </a>
 
@@ -207,7 +207,7 @@
             Your browser does not support the video tag.
             </video>
             <a href="#schauHead" style="position: absolute;">
-              <button class="buttonOnVideo" id="hideLuther" onclick="hideVideo('schauVideo')"><h5>Close</h5></button>
+              <button class="buttonOnVideo" id="hideSchau" onclick="hideVideo('schauVideo', 'showSchau')"><h5>X</h5></button>
             </a>
           </div>
 
@@ -280,10 +280,10 @@
             </div>
           </a>
 
-          <a href="#lutherVideo" id="showLuther" onclick="toggleVideo('lutherVideo')">
+          <a href="#lutherVideo" id="showLuther" onclick="toggleVideo('lutherVideo', this)">
             <div class="thumbnailDiv">
               <img class="thumbnail" src="images\SMH_aproposluther_outdoors.jpg" alt="aproposluther video">
-              <div class="thumbnailText">Click to toggle the video</div>
+              <div class="thumbnailText">Click to show the video</div>
             </div>
           </a>
 
@@ -294,7 +294,7 @@
             Your browser does not support the video tag.
             </video>
             <a href="#lutherHead" style="position: absolute;">
-              <button class="buttonOnVideo" id="hideLuther" onclick="hideVideo('lutherVideo')"><h5>X</h5></button>
+              <button class="buttonOnVideo" id="hideLuther" onclick="hideVideo('lutherVideo', 'showLuther')"><h5>X</h5></button>
             </a>
           </div>
 
@@ -387,10 +387,10 @@
           </div>
 
             Or check out the storyline of the game in the video above. |<b>German text</b>
-          <a href="#creatureVideo" id="showCreature" onclick="toggleVideo('creatureVideo')">
+          <a href="#creatureVideo" id="showCreature" onclick="toggleVideo('creatureVideo', this)">
             <div class="thumbnailDiv">
               <img class="thumbnail" src="files\thumbnails\SMH_Creature_thumb.png" alt="It's a creature not a feature – video">
-              <div class="thumbnailText">Click to toggle the video</div>
+              <div class="thumbnailText">Click to show the video</div>
             </div>
           </a>
 
@@ -401,7 +401,7 @@
             Your browser does not support the video tag.
             </video>
             <a href="#creatureHead" style="position: absolute;">
-              <button class="buttonOnVideo" id="hideCreature" onclick="hideVideo('creatureVideo')"><h5>Close</h5></button>
+              <button class="buttonOnVideo" id="hideCreature" onclick="hideVideo('creatureVideo', 'showCreature')"><h5>X</h5></button>
             </a>
           </div>
 
@@ -458,7 +458,7 @@
         <p id="recipe" onclick="off()" name="recipe"><a href="recipe.html">To the recipe!</a></p>
       </div>
 
-      <button id="close" onclick="off()" type="" name="close"><h3 style="padding: 0.1em 0.5em;">x</h3></button>
+      <button id="close" onclick="off()" type="" name="close"><h3 style="padding: 0.1em 0.5em;">X</h3></button>
     </div>
   </div>
 

@@ -276,6 +276,7 @@ body {
   box-sizing: border-box;
   align-items: flex-start;
   z-index: 50;
+  position: relative;
 }
 
 .zweidrittel{
@@ -288,6 +289,7 @@ body {
   box-sizing: border-box;
   align-items: flex-start;
   z-index: 50;
+  position: relative;
 }
 
 .drittel{
@@ -299,6 +301,7 @@ body {
   padding: 0.5em 1em;
   box-sizing: border-box;
   align-items: flex-start;
+  position: relative;
 }
 
 .projectDiv{
@@ -626,10 +629,21 @@ body {
 .buttonOnVideo{
   position: absolute;
   display: flex;
-  margin: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
   padding: 0.2rem 0rem;
-  background-color: #FFD96B;
+  background-color: #FFD96B52;
   z-index: 210;
+  top: 0;
+  right: 0;
+}
+
+.buttonOnVideo h5{
+  margin: 0;
+}
+
+.buttonOnVideo:hover{
+  background-color: #FFD96B;
 }
 
 /*___Projects with Description__*/

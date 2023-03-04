@@ -30,7 +30,7 @@
 body{
   font-family: "Open Sans Regular";
   font-size: 1em;
-  color: #289973;
+  color: #216966;
   overflow: auto;
   word-break: normal;
   word-wrap: break-word;
@@ -311,6 +311,10 @@ body {
 .projectDiv.zweidrittel{
   border-top: 2px #FFD96B solid;
   margin-top: 0.2rem;
+}
+
+.downloadIcon{
+  color: #289973;
 }
 
 .downloadIcon img{
@@ -656,7 +660,7 @@ body {
 .toggleDescriptionButton{
   display: block;
   margin: 0.5rem 0;
-  color: #289973;
+  color: #216966;
   background-color: #FFD96B48;
   padding: 0.2rem 1rem;
 }

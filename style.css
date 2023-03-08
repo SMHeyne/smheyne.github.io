@@ -317,11 +317,19 @@ body {
   color: #289973;
 }
 
+.downloadIcon a{
+  margin-bottom: 1rem;
+}
+
 .downloadIcon img{
   height: 2rem;
   width: auto;
   margin: 0 1rem;
   color: #289973;
+}
+
+.downloadList{
+  margin-bottom: 1.5rem;
 }
 
 .someSpace{

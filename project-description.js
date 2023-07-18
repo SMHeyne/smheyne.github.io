@@ -8,16 +8,16 @@ function toggleDescription(projectDescriptionId, button, projectDivId){
 
         showDescription(projectDescriptionId);
         button.innerText = "Show less";
-        projectDiv.classList.remove("drittel");
-        projectDiv.classList.add("zweidrittel");
+        projectDiv.classList.remove("oneThird");
+        projectDiv.classList.add("twoThirds");
         projectDiv.style.background = "#FFD96B66";
 
     }
     else {
         hideDescription(projectDescriptionId);
         button.innerText = "Read more";
-        projectDiv.classList.add("drittel");
-        projectDiv.classList.remove("zweidrittel");
+        projectDiv.classList.add("oneThird");
+        projectDiv.classList.remove("twoThirds");
         projectDiv.style.background = "none";
     }
 }

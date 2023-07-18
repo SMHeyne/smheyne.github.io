@@ -201,7 +201,6 @@ button{
 }
 
 .thumbnail{
-  margin: 0.5rem 1rem;
   border-style: solid;
   border-width: 2px;
   width: 90%;
@@ -250,13 +249,14 @@ body {
 .container{
   display: flex;
   margin: auto;
-  flex-direction: row;
+  /*flex-direction: row;*/
   flex-wrap: wrap;
   padding: 1rem 2rem;
   margin: 0 5rem;
   min-height: 85vh;
   box-sizing: border-box;
   background: #FCFCFC;
+  align-items: baseline;
 }
 
 .row{
@@ -266,49 +266,33 @@ body {
   margin: auto;
 }
 
-.dreidrittel{
+.column{
+  flex-direction: column;
+}
+
+.flexcontainer{
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fullWidth{
   width: 100%;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   padding: 0.5em 1em;
-  box-sizing: border-box;
-  align-items: flex-start;
-  z-index: 50;
-  position: relative;
 }
 
-.zweidrittel{
-  width: 66%;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.twoThirds{
+  width: 60%;
   padding: 0.5em 1em;
-  box-sizing: border-box;
-  align-items: flex-start;
-  z-index: 50;
-  position: relative;
 }
 
-.drittel{
-  width: 32%;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0.5em 1em;
-  box-sizing: border-box;
-  align-items: flex-start;
-  position: relative;
+.oneThird{
+  width: 30%;
+  padding-left: 1em;
+  padding-top: 0.5em;
 }
 
-.projectDiv{
-    min-height: 25rem;
-}
-
-.projectDiv.zweidrittel{
+.projectDiv.twoThirds{
   border-top: 2px #FFD96B solid;
   margin-top: 0.2rem;
 }
@@ -485,16 +469,17 @@ body {
     margin: 0 1.5rem;
   }
 
-  .zweidrittel{
+  .twoThirds{
     width: 80%;
   }
 
-  .drittel{
+  .oneThird{
     width: 45%;
   }
 
   .projectDiv{
       min-height: 20rem;
+      width: 45%;
   }
 
 
@@ -528,13 +513,17 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-  .zweidrittel{
+  .twoThirds{
     width: 90%;
   }
 
-  .drittel{
+  .oneThird{
     width: 90%;
   }
+  .projectDiv{
+    width: 90%;
+  }
+
   #resume{
     width: 90%;
   }
@@ -605,7 +594,7 @@ body {
     height: auto;
     }
 
-  .drittel, .zweidrittel, .resume{
+  .oneThird, .twoThirds, .resume{
     width: 100%;
   }
 

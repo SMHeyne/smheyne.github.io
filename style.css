@@ -97,7 +97,7 @@ h5{
   margin-top: 0.3rem;
 }
 
-p, span{
+p{
   font-family: "Open Sans Regular";
   font-size: 1rem;
   color: #216966;     /*dunkler türkis*/
@@ -379,11 +379,87 @@ body {
   box-sizing: inherit;
 }
 
-.haupttext{
-  max-width: 800px;
-  min-width: 200px;
-  display: block;
-  min-height: 40vh
+/*____BURGER MENU_________*/
+
+.burgermenu{
+
+  position: fixed;
+  z-index: 110;
+  display: flex;
+  top: 1rem;
+
+}
+
+#allPages{
+  display: flex;
+  flex-direction: row;
+  background-color: #FCFCFC;
+  min-width: 30vw;
+  justify-content: space-between;
+  border: 1px solid #FFD96B !important;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.allPagesItems{
+  width: auto;
+  padding: 0.5em 2em;
+  color: #216966;
+  text-decoration: none;
+}
+
+.currentPage{
+  color: #289973;
+  background-color: #FFD96B50;
+}
+
+/* Burger Menu to x */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22px;
+  width: 22px;
+  margin-top: 0.5em;
+}
+
+button.nav-toggle{
+  background-color: #FCFCFC00;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #216966;
+  transition: all 100ms ease-in-out;
+}
+
+.nav-toggle:hover {
+  cursor: pointer;
+}
+
+.x:nth-of-type(1) {
+  transition: all 100ms ease-in-out;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 28px;
+}
+
+.x:nth-of-type(2) {
+  transition: all 100ms ease-in-out;
+  transform-origin: center;
+  width: 0;
+}
+
+.x:nth-of-type(3) {
+  transition: all 100ms ease-in-out;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  width: 28px;
 }
 
 .pic{
@@ -397,15 +473,6 @@ body {
   width: auto;
   padding-right: 0.2em;
   padding-top: 0.1em;
-}
-
-.lebenslauf{
-  background-color: #FFD96B;
-  max-width: 800px;
-  width: 70%;
-  min-width: 200px;
-  margin-left: 3em;
-  margin-right: 3em;
 }
 
 #background_pic{
@@ -456,6 +523,60 @@ body {
   bottom: 0;
 }
 
+/*_______HOME SCREEN: SELECTION BETWEEN CONTACT AND PROJECT VIEW*/
+
+#selectionMenuHome{
+  display: flex;
+  flex-direction: row;
+  background-color: #FCFCFC;
+  min-width: 20vw;
+  justify-content: center;
+  border: 1px solid #FFD96B !important;
+  border-radius: 5px;
+  margin: auto;
+  max-width: 80%;
+  max-width: 50em;
+  padding: 0;
+}
+
+#seeProjects{
+  border-right: 0.2em #216966 solid !important;
+  padding: 1em 2em;
+  flex-grow: 1;
+}
+
+#seeContactInfo{
+  padding: 1em 2em;
+  flex-grow: 1;
+}
+
+#contactInfo{
+  display: none;
+  visibility: hidden;
+  flex-wrap: wrap;
+}
+
+#allProjects{
+  display: flex;
+  visibility: visible;
+}
+
+button{
+  background-color: #FCFCFC;
+  color: #216966;
+}
+
+.currentSelectionMenuHome{
+  background-color: #FFD96B50;
+  flex-grow: 2 !important;
+  text-align: center;
+}
+
+button:hover{
+  background-color: #FFD96B20;
+}
+
+
 /*_____VERY WIDE SCREENS_______*/
 
 @media screen and (min-width: 1750px) {
@@ -496,7 +617,7 @@ body {
   }
 
   #pictoright{
-    order: 1;
+    order: 2;
   }
 
   #about-text{
@@ -522,8 +643,31 @@ body {
 
   #background_pic{
     right: 1.5rem;
-    top: 9rem;
+    top: 26rem;
     max-width: 8em;
+  }
+
+  .burgermenu{
+    left: 2rem;
+  }
+  
+  .nav-toggle{
+    display: flex;
+  }
+
+  #allPages{
+    display: none;
+    flex-direction: column;
+    visibility: collapse;
+  }
+
+  .allPagesItems{
+    padding: 0.5em 1em;
+    margin: 0.5em 0em;
+  }
+
+  #selectionMenuHome{
+    max-width: 80%;
   }
 }
 
@@ -538,6 +682,7 @@ body {
 
   #pictoright{
     width: 45%;
+    order: 2;
   }
 
   h1{
@@ -554,6 +699,8 @@ body {
     max-width: 7em;
     top: 8rem;
   }
+
+
 }
 
 
@@ -619,11 +766,17 @@ body {
   #pictoright{
     width: 80%;
     margin-right: 1em;
+    order: 1;
   }
 
   #whitebox-bt{
     padding-left: 0.2rem;
     padding-right: 0.2rem;
+  }
+
+  .burgermenu{
+    left: 0.5rem;
+    top: 1em;
   }
 }
 

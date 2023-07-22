@@ -29,6 +29,21 @@
   <!-- Hauptcontainer für Inhalte-->
 <div class="whiteBackground">
   <div class="container">
+
+    <div class="burgermenu">
+      <button class="nav-toggle" role="button" aria-haspopup="menu" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div id="allPages">
+        <p><a href="index.html" class="allPagesItems">Projects | Contact</a> </p>
+        <p><a href="about.html" class="allPagesItems">About me</a></p>
+        <p><a href="resume.html" class="allPagesItems">Resume</a></p>
+        <p><a href="blog.html" class="allPagesItems">Blog</a></p>
+      </div>
+    </div>
+
     <div style="width: 100%; height: 7rem;">
     </div>
 
@@ -150,7 +165,7 @@
       </ul>
 
       <p><strong>Eingesetzte Dienste und Diensteanbieter:</strong></p>
-      <span>
+      <p>
       <ul class="m-elements">
         <li><strong>Instagram:</strong> Soziales Netzwerk; Dienstanbieter: Instagram Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA, Mutterunternehmen: Facebook, 1 Hacker Way, Menlo Park, CA 94025, USA; Website: <a href="https://www.instagram.com" target="_blank">https://www.instagram.com</a>; Datenschutzerklärung: <a href="https://instagram.com/about/legal/privacy" target="_blank">https://instagram.com/about/legal/privacy</a>.</li>
         
@@ -158,7 +173,7 @@
         
         <li><strong>Exercism:</strong> Soziales Netzwerk zum Erlernen von Programmiersprachen; Exercism is not-for-profit organisation registered in the UK. Its trustees are Katrina Owen, Jeremy Walker and Erik Schierboom; Website: <a href="https://exercism.org/" target="_blank">https://exercism.org/</a>; Datenschutzerklärung: <a href="https://exercism.org/docs/using/legal/privacy-policy" target="_blank">https://exercism.org/docs/using/legal/privacy-policy</a>; <br>Das Logo wurde von der Website Wikimedia Commons heruntergeladen: <a href="https://commons.wikimedia.org/wiki/File:Exercism-logo.svg">https://commons.wikimedia.org/wiki/File:Exercism-logo.svg</a>  </li>
       </ul>
-      </span>
+      </p>
 
       <h3 id="m43">Weiteres</h3>
       <p>Zur Nutzung von Google Drive. <br>
@@ -177,11 +192,6 @@
       <p class="seal"><a href="https://datenschutz-generator.de/?l=de" title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank" rel="noopener noreferrer nofollow">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke</a></p>
     </div>
 
-  <div class="fullWidth">
-    <h3>Back to the main page?</h3> <br>
-
-    <A HREF="index.html"><p>Click here.</p></A>
-  </div>
 </div>
 
 </div>
@@ -210,11 +220,12 @@
         </p>
       </div>
       <div class="twoThirds">
-        <span>Copyright © 2023 Sabine M. Heyne. All rights reserved.</span>
+        <p>Copyright © 2023 Sabine M. Heyne. All rights reserved.</p>
       </div>
     </div>
   </footer>
 <!-- FOOTER ENDE-->
+  <script src="hamburgerMenu.js"></script>
 
 </body>
 </html>

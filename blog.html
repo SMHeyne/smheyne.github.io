@@ -31,6 +31,21 @@
  <!-- Hauptcontainer für Inhalte-->
 <div class="whiteBackground">
   <div class="container">
+
+    <div class="burgermenu">
+      <button class="nav-toggle" role="button" aria-haspopup="menu" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div id="allPages">
+        <p><a href="index.html" class="allPagesItems ">Projects | Contact</a> </p>
+        <p><a href="about.html" class="allPagesItems">About me</a></p>
+        <p><a href="resume.html" class="allPagesItems">Resume</a></p>
+        <p><a href="blog.html" class="allPagesItems currentPage">Blog</a></p>
+      </div>
+    </div>
+
     <div style="width: 100%; height: 7rem;">
     </div>
       <div class="fullWidth">
@@ -40,26 +55,20 @@
     <div class="row">
         <div class="twoThirds">
           <h3>Starting a personal blog to share my progress</h3>
-          <div class="haupttext">
+          <div >
             <h2>Welcome!</h2>
-              <span>
+              <p>
                 I just realised how much happened during these last 9.5 months sinced I moved to Finland. <br>
                 I got to know great people at Wondershop, which I can today call my friends. I attended multiple events and discussions. I learned a lot about my field, took many hours to read Rules of Play and the book of lenses and started to improve my very basic coding skills. And I would like to share some of it here on my website. I was thinking about posting on LinkedIn multiple times. But I must admit, I'm to shy to post under my own name. Give me the responsibility to post for an institution and I'm all on it. But for myself? - I'm working on it and this is my first baby step! <br>
                 Maybe you come back in a week or so and there might already be something new here - let's see! <br>
                 Meanwhile you could follow my Weekly Game Challenge on github if you like: <a href="https://github.com/smheyne">github.com/smheyne</a> <br>
                 See you around!  
-              </span>
+              </p>
               <p>Helsinki, 18. July 2023</p>
               <h4>You made it this far? Thanks for your interest!</h4>
           </div>
         </div>
 
-      </div>
-
-      <div class="twoThirds">
-        <h2>Back to the main page?</h2> <br>
-
-      <a HREF="index.html">Click here.</a>
       </div>
 
     </div>
@@ -88,11 +97,13 @@
           </p>
         </div>
         <div class="twoThirds">
-          <span>Copyright © 2023 Sabine M. Heyne. All rights reserved.</span>
+          <p>Copyright © 2023 Sabine M. Heyne. All rights reserved.</p>
         </div>
       </div>
     </footer>
   <!-- FOOTER ENDE-->
+
+  <script src="hamburgerMenu.js"></script>
 
 </body>
 </html>

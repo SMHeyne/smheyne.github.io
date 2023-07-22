@@ -263,15 +263,10 @@ body {
   margin: auto;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: baseline;
+  /*align-items: baseline;*/
 }
 
-.row{
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 0;
-  margin: auto;
-}
+
 
 .column{
   flex-direction: column;
@@ -429,7 +424,11 @@ body {
 }
 
 #pictoright{
-  float: right;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  text-align: right;
+  margin-left: auto;
+  order: 2;
 }
 
 #footer{
@@ -467,7 +466,7 @@ body {
 
 @media screen and (min-width: 1750px) {
   .container{
-    max-width: 1750px;
+    max-width: 1500px;
   }
 }
 
@@ -480,8 +479,14 @@ body {
   }
 
   .container {
-    flex-direction: column;
+    /*flex-direction: column;*/
 
+  }
+
+  .container > * {
+    /*
+    flex-basis: 1;
+    */
   }
 
   .whiteBackground{
@@ -494,6 +499,14 @@ body {
 
   .oneThird{
     width: 45%;
+  }
+
+  #pictoright{
+    order: 1;
+  }
+
+  #about-text{
+    width: 50%;
   }
 
   #resume{
@@ -534,6 +547,10 @@ body {
     width: 90%;
   }
 
+  #pictoright{
+    width: 45%;
+  }
+
   #resume{
     width: 90%;
   }
@@ -552,7 +569,7 @@ body {
 
 
 /*_______MOBILE__________*/
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   body {
     width: 100vw;
     margin-left: 0em;
@@ -590,7 +607,7 @@ body {
   }
 
   .container{
-    width: 100vw;
+    width: 100%;
   }
 
   .whiteBackground{
@@ -609,6 +626,11 @@ body {
 
   .oneThird, .twoThirds, .resume{
     width: 100%;
+  }
+
+  #pictoright{
+    width: 80%;
+    margin-right: 1em;
   }
 
   #whitebox-bt{

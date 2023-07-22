@@ -375,12 +375,6 @@ body {
   height: 100%;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 *, ::before, ::after{
   box-sizing: inherit;
 }
@@ -587,7 +581,7 @@ body {
     font-size: 1.5em;
   }
 
-  .row, .container {
+  .container {
     flex-direction: column;
   }
 

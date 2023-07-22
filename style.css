@@ -503,10 +503,6 @@ body {
     width: 50%;
   }
 
-  #resume{
-    width: 80%;
-  }
-
   .someSpace{
     padding-top: 0;
   }
@@ -542,10 +538,6 @@ body {
 
   #pictoright{
     width: 45%;
-  }
-
-  #resume{
-    width: 90%;
   }
 
   h1{
@@ -620,7 +612,7 @@ body {
     height: auto;
     }
 
-  .oneThird, .twoThirds, .resume{
+  .oneThird, .twoThirds{
     width: 100%;
   }
 

@@ -534,7 +534,7 @@ body {
     position: fixed;
     right: 1.5rem;
     top: 10rem;
-    max-width: 150px;
+    max-width: 10em;
   }
 }
 

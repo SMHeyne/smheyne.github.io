@@ -493,12 +493,6 @@ body {
     width: 45%;
   }
 
-  .projectDiv{
-      min-height: 20rem;
-      width: 45%;
-  }
-
-
   #resume{
     width: 80%;
   }
@@ -534,9 +528,6 @@ body {
   }
 
   .oneThird{
-    width: 90%;
-  }
-  .projectDiv{
     width: 90%;
   }
 

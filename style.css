@@ -415,9 +415,9 @@ body {
 }
 
 #background_pic{
-  position: fixed;
+  position: absolute;
   right: 5rem;
-  top: 12rem;
+  top: 9rem;
   max-height: 30em;
   min-height: 80px;
   z-index: 0;
@@ -531,10 +531,9 @@ body {
   }
 
   #background_pic{
-    position: fixed;
     right: 1.5rem;
-    top: 10rem;
-    max-width: 10em;
+    top: 9rem;
+    max-width: 8em;
   }
 }
 
@@ -565,6 +564,10 @@ body {
     padding-top: 1rem;
   }
 
+  #background_pic{
+    max-width: 7em;
+    top: 8rem;
+  }
 }
 
 
@@ -617,10 +620,9 @@ body {
   }
 
   #background_pic{
-    position: fixed;
     right: 0.5rem;
-    top: 8rem;
-    max-width: 8em;
+    top: 7rem;
+    max-width: 6em;
     height: auto;
     }
 

@@ -482,6 +482,7 @@ button.nav-toggle{
   max-height: 30em;
   min-height: 80px;
   z-index: 0;
+  -webkit-min-device-pixel-ratio: 2;
 }
 
 #pictoright{
@@ -618,10 +619,11 @@ button:hover{
 
   #pictoright{
     order: 2;
+    width: 30%;
   }
 
   #about-text{
-    width: 50%;
+    width: 60%;
   }
 
   .someSpace{
@@ -683,6 +685,10 @@ button:hover{
   #pictoright{
     width: 45%;
     order: 2;
+  }
+
+  #about-text{
+    width: 90%;
   }
 
   h1{

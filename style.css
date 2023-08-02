@@ -397,7 +397,7 @@ body {
   justify-content: space-between;
   border: 1px solid #FFD96B !important;
   border-radius: 5px;
-  padding-top: 0.5em;
+  padding: 0.5em 0.2em 0 0.2em;
   margin: 0;
   flex-wrap: wrap;
 }

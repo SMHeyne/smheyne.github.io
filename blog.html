@@ -48,25 +48,83 @@
 
     <div style="width: 100%; height: 7rem;">
     </div>
-      <div class="fullWidth">
-        <h1>What's cooking?</h1>  
+
+    <div class="fullWidth">
+      <h1>What's cooking?</h1>  
+      <h3>Starting a personal blog to share my progress</h3>
+    </div>
+
+    <div class="flexcontainer">
+
+      <div id="post-websiteUpdate" class="projectDiv twoThirds " style="background: rgba(255, 217, 107, 0.2);">
+        <p>Helsinki, 03. August 2023</p>
+        <h2>Website update & upgrade</h2>
+        <h3>Enhancing the user experience</h3>
+
+        <div class="" id="post-websiteUpdateText">
+          <p>
+            Hi! <br>
+            Welcome to my first actual blog entry. I guess the announcement doesn't really count. <br>
+            If you have seen my website before you might have realised that it looks different now! <br>
+            <h4>Why did I do the changes?</h4>
+            My website grew organically. I had only few projects first, a short Hello at the top and then a big second page all about me. Worked somehow. <br>
+            My main idea was to be able to filter my projects by tags and then only show, for example, all Unity projects. Therefore I used flexbox to programm this page. But definitely not the best flexbox and I mis-used some features. <br>
+            Then I added more text at the entry of my page and a picture of mine at the side. I did this because of feedback, to add a picture to make the page look a bit friendlier. So, my website suddenly got text and then projects.<br>
+          </p>
+          <p>
+            But next I added even more text. I wanted the visitor to "meet" me, read more about me right away. – But which recruiter wants to read that much right away? That thought made me add a "TLDR" button to jump to the projects. I fixed the result, not the issue. Bad mistake. <br>
+            Lately I then realised, that I never really thought about my target group. Actually an embarrassing thing to say as I focus a lot in my games on the players needs and use cases.
+            But I must admit, my website before was more made for me. I wanted my projects online and wanted to assure, that a person visiting my website could read all about me, getting to know me and be really excited. Oops.<br> But why would a visitor already be so invested in my profile? At that point they didn't know about my skills yet and pictures are easier to grasp then a lot of text. <br>
+            <h4>What it looked like</h4>
+            Here you can see the first thing a visitor saw on a desktop PC: <br>
+          </p>
+            <img class="thumbnail" src="images\blog\2_websiteUpdate\OldWebsite_Frontpage.jpg" alt="Old Website version: Frontpage with text">
+          <p>
+            And only here, after some scrolling, you could finally see my work.
+          </p>
+            <img class="thumbnail" src="images\blog\2_websiteUpdate\OldWebsite_Frontpage-Projects.jpg" alt="Old Website version: Frontpage scrolled down to see projects">
+          <p>
+            Another bad thing: Before, you could only go to my sub-pages from the main-page in the correct section. Now I added a menu and splitted the about page into <a href="about.html">"About me"</a> and <a href="resume.html">"Resume"</a>.<br>
+            So, what do you think? Is it better or worse now? Do you find my sub-pages now easier then before? <br>
+            If you have some feedback on my changes, send me an email or write me on LinkedIn. I would highly appreciate it.
+            Thanks for your time and see you next blog entry.
+            <br>
+            <h5>Sabine</h5>
+          </p>
+
+
+        </div>
+
+     
+        <button class="toggleDescriptionButton" onclick="toggleDescription('post-websiteUpdateText', this, 'post-websiteUpdate')">
+          Show less
+        </button> 
+
       </div>
 
-    <div class="row">
-        <div class="twoThirds">
-          <h3>Starting a personal blog to share my progress</h3>
-          <div >
-            <h2>Welcome!</h2>
-              <p>
-                I just realised how much happened during these last 9.5 months sinced I moved to Finland. <br>
-                I got to know great people at Wondershop, which I can today call my friends. I attended multiple events and discussions. I learned a lot about my field, took many hours to read Rules of Play and the book of lenses and started to improve my very basic coding skills. And I would like to share some of it here on my website. I was thinking about posting on LinkedIn multiple times. But I must admit, I'm to shy to post under my own name. Give me the responsibility to post for an institution and I'm all on it. But for myself? - I'm working on it and this is my first baby step! <br>
-                Maybe you come back in a week or so and there might already be something new here - let's see! <br>
-                Meanwhile you could follow my Weekly Game Challenge on github if you like: <a href="https://github.com/smheyne">github.com/smheyne</a> <br>
-                See you around!  
-              </p>
-              <p>Helsinki, 18. July 2023</p>
-              <h4>You made it this far? Thanks for your interest!</h4>
-          </div>
+      <div id="post-welcome" class="oneThird projectDiv">
+        <p>Helsinki, 18. July 2023</p>
+        <h2>Welcome!</h2>
+        <h3>Why I start a blog and hope, you like it</h3>
+        <div class="descriptionDiv" id="post-welcomeText">
+          <p>
+            I just realised how much happened during these last 9.5 months sinced I moved to Finland. <br>
+            I got to know great people at Wondershop, which I can today call my friends. I attended multiple events and discussions. I learned a lot about my field, took many hours to read Rules of Play and the book of lenses and started to improve my very basic coding skills. And I would like to share some of it here on my website. I was thinking about posting on LinkedIn multiple times. But I must admit, I'm to shy to post under my own name. Give me the responsibility to post for an institution and I'm all on it. But for myself? - I'm working on it and this is my first baby step! <br>
+            Maybe you come back in a week or so and there might already be something new here - let's see! <br>
+            Meanwhile you could follow my Weekly Game Challenge on github if you like: <a href="https://github.com/smheyne">github.com/smheyne</a> <br>
+            See you around!  
+          </p>
+        </div>
+
+        <button class="toggleDescriptionButton" onclick="toggleDescription('post-welcomeText', this, 'post-welcome')">
+          Read more
+        </button>  
+        </div>
+
+        
+
+        <div class="fullWidth">
+          <h4>You made it this far? Thanks for your interest!</h4>
         </div>
 
       </div>
@@ -104,6 +162,7 @@
   <!-- FOOTER ENDE-->
 
   <script src="hamburgerMenu.js"></script>
+  <script src="project-description.js"></script>
 
 </body>
 </html>

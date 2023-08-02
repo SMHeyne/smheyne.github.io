@@ -73,7 +73,7 @@ h3 {
   color: #289973;
   font-family: "Open Sans Bold";
   font-size: 1.5em;
-  padding-top: 1em;
+  padding-top: 0.5em;
   margin-bottom: 0.5rem;
 }
 
@@ -92,9 +92,8 @@ h5{
   color: #289973;
   font-family: "Open Sans Semibold";
   font-size: 1em;
-  padding-left: 0.5rem;
   padding-right: 0.5rem;
-  margin-top: 0.3rem;
+  margin-top: 0.3em;
 }
 
 p{
@@ -114,13 +113,12 @@ a{
   font-family: "Open Sans Regular";
   font-size: 1em;
   color: #216966;
-  text-decoration: underline #FFD96B dotted 0.1rem;
+  text-decoration: underline #ffbf00 dotted 0.1rem;
   -webkit-text-decoration: underline;
-  -webkit-text-decoration-color: #FFD96B;
+  -webkit-text-decoration-color: #ffbf00;
   -webkit-text-decoration-style: dotted;
   -webkit-text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.2rem;
-  margin-left: 0.2rem;
   display: inline;
 }
 
@@ -205,8 +203,8 @@ button{
 
 .thumbnail{
   border-style: solid;
-  border-width: 2px;
-  width: 90%;
+  border-width: 0.1em;
+  width: 95%;
   max-width: 500px;
 }
 
@@ -290,7 +288,8 @@ body {
 
 .oneThird{
   width: 30%;
-  padding-left: 1em;
+  padding-left:1em;
+  padding-right: 0.5em;
   padding-top: 0.5em;
 }
 
@@ -840,6 +839,7 @@ button:hover{
   display: block;
   margin: 0.5rem 0;
   color: #216966;
-  background-color: #FFD96B48;
+
   padding: 0.2rem 1rem;
+  border: 1px solid #FFD96B !important;
 }

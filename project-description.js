@@ -10,7 +10,7 @@ function toggleDescription(projectDescriptionId, button, projectDivId){
         button.innerText = "Show less";
         projectDiv.classList.remove("oneThird");
         projectDiv.classList.add("twoThirds");
-        projectDiv.style.background = "#FFD96B66";
+        projectDiv.style.background = "rgba(255, 217, 107, 0.2)";
 
     }
     else {

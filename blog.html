@@ -56,7 +56,51 @@
 
     <div class="flexcontainer">
 
-      <div id="post-websiteUpdate" class="projectDiv twoThirds " style="background: rgba(255, 217, 107, 0.2);">
+      <div id="post-gameChallenge" class="projectDiv twoThirds " style="background: rgba(255, 217, 107, 0.2);">
+        <p>Poland & Germany, 11. August 2023</p>
+        <h2>Weekly game challenge</h2>
+        <h3>recap on week 2</h3>
+
+        <div class="" id="post-gameChallengeText">
+          <p>
+            Week 2 didn't work as planned. Unfortunately. <br>
+            My goals and ideas were quite ambitious. I had the idea of building some gameplay in which the player flees from a thread behind, making a path for all the trapped animals and themselves. It would be a side-scroller and the perspective orthographic, 3rd person. I had the idea of fire spreading with a particle effect. I was not as crazy to think I would really visually destroy the environment. Just, when the player touches it they should loose - no HP in that early state.
+          </p>
+          <p>
+            I wanted two kinds of objects in the way: trees and rocks. The player needs the right tool to use on the objects. Axe for trees and watering can for... the rocks?! Eeeh, yeah, good question. I got distracted and built a blocky watering can. I was stupidly attached to it, kind of proud. I didn't model for some years ( I really liked 3D modelling in university, but hated weight painting too much) and I had fun stacking the blocks, I guess.
+          </p>
+          <p>
+            So I made a reason to use the watering can: for the the fire! You could try to save some time. But I had neither fire nor even the basic ability to pick up a tool yet. After that I focused getting the tools to use, on showing the right tool on the player, being able to switch and get rid of them. I wanted a nice script into which I could later on add more tools easily. So my script has a dictionary! It was a challenge to make it work, I learned a lot, but it was not worth the time. I could have just scraped the watering can and only use the axe ‚ just making it work. I was just reading in the book of lenses that you never built a proto with the goal of using it later. It’s just to state your idea and prove your concept.
+          </p>
+          <p>
+            Instead I next wanted nice UX and added a tiny animation on the watering can. It adds feedback for the player, when they pressed the button to use the tool. I think feedback is one of the most important things in good design - how else should the player learn and understand what is happening and why. But for my tough time schedule this was too much effort. I should just have added some ugly UI for now.
+          </p>
+          <p>
+            And then I had the problem, that things didn’t work consistently when playing. Sometimes I could change the tool just fine and sometimes I couldn't.
+            <br>
+            At this point I was already in my proto-3-week – you might see the problem here. In the proto-2-week I needed some time to finalise and publish my week 1 proto, but this time I was still working on basic features.
+            <br>
+            And then multiple personal things hit, one of them was that I got sick. I still wanted to make the proto work afterwards. I wasn’t ready to give up yet.
+          </p>
+          <p>
+            But now I'm on vacation and I realised: I still learned a lot! I will use these learnings for the next idea, reconsider the time frame and proto depending on that weeks schedule and just go on learning. <br>
+            But for now I'm good. I failed, but it's okay.
+          </p>
+          <p>
+            You will see my next Game Challenge Proto folder in GitHub when I'm back. <br>
+            See you around!
+            <h5>Sabine</h5>
+          </p>
+        </div>
+
+     
+        <button class="toggleDescriptionButton" onclick="toggleDescription('post-gameChallengeText', this, 'post-gameChallenge')">
+          Show less
+        </button> 
+
+      </div>
+
+      <div id="post-websiteUpdate" class="projectDiv oneThird ">
         <p>Helsinki, 03. August 2023</p>
         <h2>Website update & upgrade</h2>
         <h3>Enhancing the user experience</h3>
@@ -66,6 +110,8 @@
             Hi! <br>
             Welcome to my first actual blog entry. I guess the announcement doesn't really count. <br>
             If you have seen my website before you might have realised that it looks different now! <br>
+          </p>
+          <p>
             <h4>Why did I do the changes?</h4>
             My website grew organically. I had only few projects first, a short Hello at the top and then a big second page all about me. Worked somehow. <br>
             My main idea was to be able to filter my projects by tags and then only show, for example, all Unity projects. Therefore I used flexbox to programm this page. But definitely not the best flexbox and I mis-used some features. <br>
@@ -97,7 +143,7 @@
 
      
         <button class="toggleDescriptionButton" onclick="toggleDescription('post-websiteUpdateText', this, 'post-websiteUpdate')">
-          Show less
+          Show more
         </button> 
 
       </div>

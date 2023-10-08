@@ -9,7 +9,7 @@ function toggleDescription(projectDescriptionId, button, projectDivId){
         showDescription(projectDescriptionId);
         button.innerText = "Show less";
         projectDiv.classList.remove("oneThird");
-        projectDiv.classList.add("twoThirds");
+        projectDiv.classList.add("fullWidth");
         projectDiv.style.background = "rgba(255, 217, 107, 0.2)";
 
     }
@@ -17,7 +17,7 @@ function toggleDescription(projectDescriptionId, button, projectDivId){
         hideDescription(projectDescriptionId);
         button.innerText = "Read more";
         projectDiv.classList.add("oneThird");
-        projectDiv.classList.remove("twoThirds");
+        projectDiv.classList.remove("fullWidth");
         projectDiv.style.background = "none";
     }
 }

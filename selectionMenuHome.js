@@ -1,36 +1,20 @@
+function toggleHomeMenu(checkbox) {
+  const projectDiv = document.getElementById("allProjects");
+  const contactDiv = document.getElementById("contactInfo");
 
+  if(checkbox.checked)
+  {
+    console.log("true = button left");
 
-function toggleHomeMenu(button){
-    const projects = document.getElementById("seeProjects");
-    const contactInfo = document.getElementById("seeContactInfo");
+    contactDiv.style.display = "none";
+    contactDiv.style.visibility = "hidden";
+  }
+  else
+  {
+    console.log("false");
 
-    const projectDiv = document.getElementById("allProjects");
-    const contactDiv = document.getElementById("contactInfo");
+    contactDiv.style.display = "contents";
+    contactDiv.style.visibility = "visible";
 
-    if(button.id == "seeProjects")
-    {
-        projects.classList.add("currentSelectionMenuHome");
-        contactInfo.classList.remove("currentSelectionMenuHome");
-
-        projectDiv.style.display = "flex";
-        projectDiv.style.visibility = "visible";
-
-        contactDiv.style.display = "none";
-        contactDiv.style.visibility = "hidden";
-
-    }
-    if(button.id == "seeContactInfo")
-    {
-        contactInfo.classList.add("currentSelectionMenuHome");
-        projects.classList.remove("currentSelectionMenuHome");
-
-        contactDiv.style.display = "contents";
-        contactDiv.style.visibility = "visible";
-
-        projectDiv.style.display = "none";
-        projectDiv.style.visibility = "hidden";
-
-    }
-
-
+  }
 }

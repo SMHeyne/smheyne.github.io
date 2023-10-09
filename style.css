@@ -29,7 +29,7 @@
 
 body{
   font-family: "Open Sans Regular";
-  font-size: 1em;
+  font-size: 1rem;
   color: #216966;
   overflow: auto;
   word-break: normal;
@@ -40,7 +40,7 @@ body{
 h1 {
   color: #FFD96B;     /*gelb*/
   font-family: "Expletus Sans Bold", Verdana;
-  font-size: 5em;
+  font-size: 5rem;
   text-align: left;
   margin-top: 0rem;
 }
@@ -48,7 +48,7 @@ h1 {
 #hello {
   color: #216966;    /*dunkler türkis*/
   font-family: "Open Sans Light";
-  font-size: 3em;
+  font-size: 3rem;
   text-align: left;
   padding-top: 1.5rem;
   padding-bottom: 0.2rem;
@@ -73,16 +73,16 @@ h2 {
 h3 {
   color: #289973;
   font-family: "Open Sans Bold";
-  font-size: 1.5em;
-  padding-top: 0.5em;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rrem;
   column-span: all;
 }
 
 h4{
   color: #289973;
   font-family: "Open Sans Semibold";
-  font-size: 1.2em;
+  font-size: 1.2rem;
   padding-left: 0.25rem;
   padding-bottom: 0;
   margin-top: 0.5rem;
@@ -93,9 +93,9 @@ h4{
 h5{
   color: #289973;
   font-family: "Open Sans Semibold";
-  font-size: 1em;
+  font-size: 1rem;
   padding-right: 0.5rem;
-  margin-top: 0.3em;
+  margin-top: 0.3rem;
 }
 
 p{
@@ -113,7 +113,7 @@ p::after{
 
 a{
   font-family: "Open Sans Regular";
-  font-size: 1em;
+  font-size: 1rem;
   color: #216966;
   text-decoration: underline #ffbf00 dotted 0.1rem;
   -webkit-text-decoration: underline;
@@ -129,16 +129,16 @@ a:hover{
 }
 
 ul{
-  margin-top: 0.2em;
-  margin-bottom: 1em;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 /* Tabular Resume */
 
 td{
   vertical-align: top;
-  padding-top: 0.8em;
-  padding-right: 0.2em;
+  padding-top: 0.8rem;
+  padding-right: 0.2rem;
 }
 
 /*_________Cookies Overlay__________*/
@@ -169,7 +169,7 @@ td{
   background-color: #FCFCFC;
   z-index: 205;
   padding-top: 2rem;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.2rem;
   align-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -205,7 +205,7 @@ button{
 
 .thumbnail{
   border-style: solid;
-  border-width: 0.1em;
+  border-width: 0.1rem;
   width: 95%;
   max-width: 500px;
 }
@@ -230,7 +230,7 @@ button{
 /*___RECIPE TABLE____*/
 
 #table_recipe td{
-  padding-right: 0.5em;
+  padding-right: 0.5rem;
 }
 
 .cell_date{
@@ -281,20 +281,20 @@ body {
 
 .fullWidth{
   width: 100%;
-  padding: 0.5em 1em;
-  margin-top: 0.5em;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
 }
 
 .twoThirds{
   width: 60%;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
 }
 
 .oneThird{
   width: 30%;
-  padding-left:1em;
-  padding-right: 0.5em;
-  padding-top: 0.5em;
+  padding-left:1rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .projectDiv.twoThirds{
@@ -401,14 +401,14 @@ body {
   justify-content: space-between;
   border: 1px solid #FFD96B !important;
   border-radius: 5px;
-  padding: 0.5em 0.2em;
+  padding: 0.5rem 0.2rem;
   margin: 0;
   flex-wrap: wrap;
 }
 
 .allPagesItems{
   width: auto;
-  padding: 0.5em 2em;
+  padding: 0.5rem 2rem;
   color: #216966;
   text-decoration: none;
 }
@@ -479,23 +479,23 @@ button.nav-toggle{
 .logo{
   height: 23px;
   width: auto;
-  padding-right: 0.2em;
-  padding-top: 0.1em;
+  padding-right: 0.2rem;
+  padding-top: 0.1rem;
 }
 
 #background_pic{
   position: absolute;
   right: 5rem;
   top: 9rem;
-  max-height: 30em;
+  max-height: 30rem;
   min-height: 80px;
   z-index: 0;
   -webkit-min-device-pixel-ratio: 2;
 }
 
 #pictoright{
-  padding-left: 1em;
-  padding-top: 0.5em;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
   text-align: right;
   margin: 1rem;
   margin-right: auto;
@@ -525,7 +525,7 @@ button.nav-toggle{
 
 #footer{
   bottom: 2rem;
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
   width: 100%;
   background-color: #FCFCFC;
   flex-flow: wrap;
@@ -567,17 +567,17 @@ button.nav-toggle{
   margin: auto;
   */
   max-width: 80%;
-  max-width: 50em;
+  max-width: 50rem;
 }
 
 #seeProjects{
-  border-right: 0.2em #216966 solid !important;
-  padding: 1em 2em;
+  border-right: 0.2rem #216966 solid !important;
+  padding: 1rem 2rm;
   flex-grow: 1;
 }
 
 #seeContactInfo{
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   flex-grow: 1;
 }
 
@@ -759,7 +759,7 @@ button:hover{
   #background_pic{
     right: 1.5rem;
     top: 26rem;
-    max-width: 8em;
+    max-width: 8rem;
   }
 
   .burgermenu{
@@ -780,7 +780,7 @@ button:hover{
   }
 
   .allPagesItems{
-    padding: 0.5em 1em 0.75em 1em;
+    padding: 0.5rem 1rem 0.75rem 1rem;
     width: 100%;
     display: inline-block;
   }
@@ -804,17 +804,17 @@ button:hover{
   }
 
   h1{
-    font-size: 4em;
+    font-size: 4rem;
     padding-top: 1rem;
   }
 
   h2{
-    font-size: 2.5em;
+    font-size: 2.5rem;
     padding-top: 1rem;
   }
 
   #background_pic{
-    max-width: 7em;
+    max-width: 7rem;
     top: 8rem;
   }
 
@@ -837,16 +837,16 @@ button:hover{
 @media only screen and (max-width: 500px) {
   body {
     width: 100vw;
-    margin-left: 0em;
-    margin-right: 0em;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
   h1{
-    font-size: 2.8em;
+    font-size: 2.8rem;
   }
 
   h3{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     display: block ruby;
   }
 
@@ -869,7 +869,7 @@ button:hover{
   }
 
   #namebox-top{
-    height: 5.3em;
+    height: 5.3rem;
   }
 
   .container{
@@ -877,7 +877,7 @@ button:hover{
   }
 
   .whiteBackground{
-    padding: 0.1em 0.5em;
+    padding: 0.1rem 0.5rem;
     margin: 0;
     border-left: 0;
   }
@@ -885,7 +885,7 @@ button:hover{
   #background_pic{
     right: 0.5rem;
     top: 7rem;
-    max-width: 6em;
+    max-width: 6rem;
     height: auto;
     }
 
@@ -900,7 +900,7 @@ button:hover{
 
   .burgermenu{
     left: 1.5rem;
-    top: 1em;
+    top: 1rem;
   }
 }
 
@@ -951,7 +951,7 @@ button:hover{
 .descriptionDiv{
   visibility: collapse;
   display: none;
-  line-height: 1.6em;
+  line-height: 1.6rem;
 }
 
 .toggleDescriptionButton{

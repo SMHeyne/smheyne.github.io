@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, p, a, span {
 }
 
 h2 {
-  color: #289973;   /*heller türkis*/
+  color: #136d52;   /*heller türkis*/
   font-family: "Expletus Sans Bold";
   font-size: 2.5em;
   text-align: left;
@@ -71,19 +71,19 @@ h2 {
 }
 
 h3 {
-  color: #289973;
+  color: #136d52;
   font-family: "Open Sans Bold";
   font-size: 1.5rem;
   padding-top: 0.5rem;
-  margin-bottom: 0.5rrem;
+  margin-bottom: 0.5rem;
   column-span: all;
 }
 
 h4{
-  color: #289973;
+  color: #136d52;
   font-family: "Open Sans Semibold";
   font-size: 1.2rem;
-  padding-left: 0.25rem;
+  padding-left: 0.15rem;
   padding-bottom: 0;
   margin-top: 0.5rem;
   margin-bottom: 0.1rem;
@@ -91,7 +91,7 @@ h4{
 }
 
 h5{
-  color: #289973;
+  color: #136d52;
   font-family: "Open Sans Semibold";
   font-size: 1rem;
   padding-right: 0.5rem;
@@ -125,7 +125,8 @@ a{
 }
 
 a:hover{
-    background-color: #FFD96B2B;
+    background-color: #ffda6b8c;
+    border-radius: 5px;
 }
 
 ul{
@@ -185,16 +186,24 @@ td{
 
 button{
   border: none;
+  font-family: "Open Sans Bold";
+  border-radius: 5px;
+  background-color: #FCFCFC;
 }
 
-#close{
-  display: flex;
-  background-color: #FFD96B;
-  float: left;
+.closeButton{
   cursor: pointer;
   position: absolute;
-  top: 0.5rem;
-  right: 0.2rem;
+  top: 0;
+  right: 0;
+  margin: 0.5rem 0.7rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.2rem;
+}
+
+.closeButton:hover{
+  background-color: #216966;
+  color: #FCFCFC;
 }
 
 /* Thumbnails for File Downloads*/
@@ -211,20 +220,11 @@ button{
 }
 
 
-.thumbnailText{
+.openVideo{
   position: absolute;
-  margin: 0.5rem 0.8rem;
-  margin-right: 0;
-  bottom: 0.5rem;
   left: 0;
   padding: 0.5rem;
-  padding-left: 1.5rem;
-  background-color: #FFD96BDB;
-}
 
-.thumbnailText img{
-  height: 2rem;
-  width: auto;
 }
 
 /*___RECIPE TABLE____*/
@@ -300,10 +300,6 @@ body {
 .projectDiv.twoThirds{
   border-top: 2px #FFD96B solid;
   margin-top: 0.2rem;
-}
-
-.downloadIcon{
-  color: #289973;
 }
 
 .downloadIcon a{
@@ -407,6 +403,7 @@ body {
 }
 
 .allPagesItems{
+  font-family: "Open Sans Bold";
   width: auto;
   padding: 0.5rem 2rem;
   color: #216966;
@@ -414,8 +411,8 @@ body {
 }
 
 .currentPage{
-  color: #289973;
   background-color: #FFD96B50;
+  border-radius: 5px;
 }
 
 /* Burger Menu to x */
@@ -481,6 +478,7 @@ button.nav-toggle{
   width: auto;
   padding-right: 0.2rem;
   padding-top: 0.1rem;
+  padding-left: 0.1rem;
 }
 
 #background_pic{
@@ -517,10 +515,6 @@ button.nav-toggle{
 
 .twoColumns span{
   display: inline-block;
-}
-
-#goal-text{
-
 }
 
 #footer{
@@ -665,8 +659,9 @@ input:checked + .slider .off
 }
 
 button{
-  background-color: #FCFCFC;
+  background-color: #FFD96B;;
   color: #216966;
+  margin: 0.5rem;
 }
 
 .currentSelectionMenuHome{
@@ -676,7 +671,12 @@ button{
 }
 
 button:hover{
-  background-color: #FFD96B20;
+  background-color: #FCFCFC;
+  color: #216966;
+}
+
+button a:hover{
+  background-color: #FCFCFC;
 }
 
 
@@ -709,17 +709,6 @@ button:hover{
     margin: auto;
   }
 
-  .container {
-    /*flex-direction: column;*/
-
-  }
-
-  .container > * {
-    /*
-    flex-basis: 1;
-    */
-  }
-
   .whiteBackground{
     margin: 0 1.5rem;
   }
@@ -730,13 +719,6 @@ button:hover{
 
   .oneThird{
     width: 45%;
-  }
-
-  #pictoright{
-
-  }
-
-  .image+textDiv{
   }
 
   .someSpace{
@@ -787,10 +769,6 @@ button:hover{
 
   #selectionMenuHome{
     max-width: 80%;
-  }
-
-  .twoColumns{
-
   }
 }
 
@@ -929,29 +907,71 @@ button:hover{
 
 .buttonOnVideo{
   position: absolute;
-  display: flex;
-  margin-right: 0.5rem;
-  margin-top: 0.2rem;
-  padding: 0.2rem 0rem;
-  background-color: #FFD96B52;
+  margin: 1rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #ffda6bcb;
   z-index: 210;
   top: 0;
   right: 0;
+  font-size: 1.2rem;
 }
 
 .buttonOnVideo h5{
   margin: 0;
 }
 
-.buttonOnVideo:hover{
-  background-color: #FFD96B;
+/*___Project Descriptions__*/
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-/*___Projects with Description__*/
+.gallery_item{
+  padding: 0.5rem;
+
+}
+
+.gallery_item img {
+  max-width: 100%;
+  max-height: 50vh;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery_item img:hover{
+  transform: scale(1.05);
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffda6b7e;
+  margin-top: -1px;
+  animation: zoom 0.3s ease-in-out;
+  z-index: 150;
+}
+
+.modal img {
+  max-width: 1000px;
+  width: 80vw;
+  height: auto;
+  object-fit: cover;
+}
+
 .descriptionDiv{
   visibility: collapse;
   display: none;
   line-height: 1.6rem;
+
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .toggleDescriptionButton{
@@ -961,4 +981,21 @@ button:hover{
   border-radius: 5px;
   padding: 0.2rem 1rem;
   border: 1px solid #FFD96B !important;
+}
+
+.toggleDescriptionButton:hover{
+  background-color: #FCFCFC;
+  color: #216966;
+}
+
+.projectDiv .fullWidth{
+  padding: 0;
+}
+.projectDiv .twoThirds{
+  padding: 1rem;
+  padding-left: 0rem;
+}
+.projectDiv .oneThird{
+  padding: 1rem;
+  padding-left: 0;
 }

@@ -1,12 +1,13 @@
 
-function toggleDescription(projectDescriptionId, button, projectDivId){
+function toggleDescription(projectDescriptionId, button, projectDivId, projectPreviewID){
   const descriptionDiv = document.getElementById(projectDescriptionId);
   const projectDiv = document.getElementById(projectDivId);
+
   /* Übergeben der ID aus dem Button, der dort im html in der Funktion gesetzt wird */
 
     if (window.getComputedStyle(descriptionDiv).visibility === "collapse") {
 
-        showDescription(projectDescriptionId);
+        showDescription(projectDescriptionId, projectPreviewID);
         button.innerText = "Show less";
         projectDiv.classList.remove("oneThird");
         projectDiv.classList.add("fullWidth");
@@ -14,7 +15,7 @@ function toggleDescription(projectDescriptionId, button, projectDivId){
 
     }
     else {
-        hideDescription(projectDescriptionId);
+        hideDescription(projectDescriptionId, projectPreviewID);
         button.innerText = "Read more";
         projectDiv.classList.add("oneThird");
         projectDiv.classList.remove("fullWidth");
@@ -22,16 +23,24 @@ function toggleDescription(projectDescriptionId, button, projectDivId){
     }
 }
 
-function showDescription(projectDescriptionId) {
+function showDescription(projectDescriptionId, projectPreviewID) {
   const descriptionDiv = document.getElementById(projectDescriptionId);
+  const projectPreviewDiv = document.getElementById(projectPreviewID)
 
   descriptionDiv.style.visibility = "visible";
-  descriptionDiv.style.display = "block";
+  descriptionDiv.style.display = "flex";
+  
+  projectPreviewDiv.style.display = "none";
+  projectPreviewDiv.style.visibility = "collapse";
 }
 
-function hideDescription(projectDescriptionId) {
+function hideDescription(projectDescriptionId, projectPreviewID) {
   const descriptionDiv = document.getElementById(projectDescriptionId);
-
+  const projectPreviewDiv = document.getElementById(projectPreviewID)
+  
   descriptionDiv.style.visibility = "collapse";
   descriptionDiv.style.display = "none";
+
+  projectPreviewDiv.style.visibility = "visible";
+  projectPreviewDiv.style.display = "block";
 }

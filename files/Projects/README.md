@@ -42,14 +42,3 @@ Interactive installation about Martin Luther. Get to know him with different gam
 ✏ My tasks: Installation design, accessability, intern communication
 
 #### HeyneSabine_aproposluther.mp4
-
-## It's a creature not a feature
-The title from our small game that we developed during the "MINFF". It's a 24h game jam at Harz University of Applied Sciences for the students of the master's degree conception of media and games and the bachelor's degree media informatics. Developed in Unity.
-
-✏ My task: colouring + testing the functionality
-
-#### HeyneSabine_CreatureNotFeature_Build.zip
-This is the build to play our small game.
-
-#### HeyneSabine_CreatureNotFeature_Film.mp4
-Here you can see the storyline as a movie.

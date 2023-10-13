@@ -40,12 +40,12 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
-      <div id="allPages">
+      <button id="allPages">
         <p class="menu-p"><a href="index.html" class="allPagesItems currentPage">Projects</a> </p>
         <p class="menu-p"><a href="about.html" class="allPagesItems">About me</a></p>
         <p class="menu-p"><a href="resume.html" class="allPagesItems">Resume</a></p>
         <p class="menu-p"><a href="contact.html" class="allPagesItems">Contact</a></p>
-      </div>
+      </button>
     </div>
 
     <img src="images/SMH_angelehnt.svg" alt="Sabine Heyne" id="background_pic">
@@ -65,18 +65,53 @@
 
         <!--Project Wonderworld-->
         <div class="oneThird projectDiv" id="WonderworldDivId">
-          <h3>Project Wonderworld</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_Wonderworld_thumb.png" alt="Wonderworld – in Game Screenshot from the Game Screen">
-          <h5>Massive Local Multiplayer</h5>
-          <a href="https://wondershopgames.com">© Wondershop Oy</a>
+          <div class="projectPreviewDiv" id="WonderworldPreviewID">
+            <h3>Project Wonderworld</h3>
+            <img class="thumbnail" src="images\Wonderworld\SMH_Wonderworld_thumb.png" alt="Wonderworld – in Game Screenshot from the Game Screen">
+            <h5>Massive Local Multiplayer</h5>
+            <a href="https://wondershopgames.com">© Wondershop Oy</a>
+          </div>
 
           <div class="descriptionDiv" id="WonderworldDescription">
-            <h4>Jr. Game Designer</h4>
-            <p><b>July 2022 - March 2023</b></p>
-            <p>Developing a new gaming experience for kids with a unique controller. <br>
-              Players play together on a shared screen in a public venue. The goal is to create fun, shared experiences. Each venue, so called hub, brings something unique to the game. <br>
-            The game concluded multiple platforms, two of them the Player Console and the here shown Game Screen. The Game Screen is for the shared experience with other players on-site. The Player Console is for resource management, everything social and individualisation of your player character.</p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>Project Wonderworld</h3>
+              <h4>Jr. Game Designer @ Wondershop</h4>
+              <p><b>July 2022 - January 2023</b></p>
+            </div>
+            
+
+            <div class="gallery">
+              <div class="gallery_item oneThird">
+                <img src="images\Wonderworld\SMH_Wonderworld_thumb.png" alt="Wonderworld – in Game Screenshot from the Game Screen">
+              </div>
+              <div class="gallery_item oneThird">
+                <img src="images/Wonderworld/SMH_Wonderworld_minigames.png" alt="Wonderworld – Mini Games on the Game Screen">
+              </div>
+              <div class="gallery_item oneThird">
+                <img src="images/Wonderworld/SMH_Wonderworld_PlayerConsole (1).png" alt="Wonderworld – Player Console new main page">
+              </div>
+              <div class="gallery_item oneThird">
+                <img src="images/Wonderworld/SMH_Wonderworld_PlayerConsole (2).png" alt="Wonderworld – Player Console, old bottom navigation, new avatar edit">
+              </div>
+              <div class="gallery_item oneThird">
+                <img src="images/Wonderworld/SMH_Wonderworld_Mockups (1).png" alt="Wonderworld – Player Console Mock Up Missions">
+              </div>
+              <div class="gallery_item oneThird">
+                <img src="images/Wonderworld/SMH_Wonderworld_Mockups (2).png" alt="Wonderworld – Player Console Mock up Achievements">
+              </div>
+              <div class="gallery_item oneThird">
+                <img src="images/Wonderworld/SMH_Wonderworld_Mockups (3).png" alt="Wonderworld – Player Console Mock up Rewards">
+              </div>
+            </div>
+
+            <div class="twoThirds">
+              <p>Developing a new gaming experience for kids with a unique controller. <br>
+                Players play together on a shared screen in a public venue. The goal is to create fun, shared experiences. Each venue, so called hub, brings something unique to the game. <br>
+              The game concluded multiple platforms, two of them the Player Console and the here shown Game Screen. The Game Screen is for the shared experience with other players on-site. The Player Console is for resource management, everything social and individualisation of your player character.</p>
+            </div>
+            
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Game Design</li>
@@ -85,64 +120,114 @@
                 <li>UX</li>
                 <li>Communication with Developers & Artists</li>
               </ul>
+            </div>
+            <div class="twoThirds">
+              <p>My main responsibility in the project was the Player Console. The player handles everything personal here. The first version felt more like a tool, but not like a part of the game as it was less playful. Additionally it was hard to access all the features the player was supposed to find easily here. <br>
+                I proposed a new start page, that had a totally different layout. I proposed that based on multiple personas I made with the help of the team at our test hub. I’ve been in a constant exchange with the developers and artists implementing the changes. <br>
+                My other big responsibility was balancing the mini games, their resources and all the recipes and items coming with it. Additionally both of us Designers were writing quests, missions, dialogues and descriptions.</p>
+            </div>
+            <div class="fullWidth">
+              <a href="https://wondershopgames.com">© Wondershop Oy</a>
+            </div>          
+            
+            
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('WonderworldDescription', this, 'WonderworldDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('WonderworldDescription', this, 'WonderworldDivId', 'WonderworldPreviewID')">
             Read more
           </button>
         </div>
 
         <!--Sherlock Holmes Scotland Yard-->
         <div class="oneThird projectDiv" id="SherlockDivId">
-          <h3>Sherlock Holmes Scotland Yard</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_SH-SY_thumb.jpg" alt="Sherlock Holmes Scotland Yard – Components shot">
-          <h5>Deduction Board Game</h5>
-          <a href="https://www.ravensburger-gruppe.de/en/start/index.html">© Ravensburger AG</a>
+          <div class="projectPreviewDiv" id="SherlockPreviewID">
+            <h3>Sherlock Holmes Scotland Yard</h3>
+            <img class="thumbnail" src="images\SH-ScotlandYard\SMH_SH-SY_thumb.jpg" alt="Sherlock Holmes Scotland Yard – Components shot">
+            <h5>Deduction Board Game</h5>
+            <a href="https://www.ravensburger-gruppe.de/en/start/index.html">© Ravensburger AG</a>
+            </div>
 
           <div class="descriptionDiv" id="SherlockDescription">
-            <h4>Game Development Intern</h4>
-            <p><b>January – July 2022</b></p>
-            <p>A new version of the classic from Ravensburger. Players can choose characters with special abilities and Moriarty has new possibilities to win the game. <br>
+            <div class="fullWidth">
+              <h3>Sherlock Holmes Scotland Yard</h3>
+              <h4>Game Development Intern</h4>
+              <p><b>January – July 2022</b></p>
+            </div>
+
+              <div class="gallery_item oneThird">
+                <img src="images\SH-ScotlandYard\SMH_SH-SY_thumb.jpg" alt="Sherlock Holmes Scotland Yard – Components shot">
+              </div>
+            
+            <div class="twoThirds">
+              A new version of the classic from Ravensburger. Players can choose characters with special abilities and Moriarty has new possibilities to win the game. <br>
               Block a road with Inspector Lestrades ability or ban Moriarty from using either Tram or Underground next round. But be aware: he could use the hot air balloon to escape!
-            </p>
-            <h5>My Tasks</h5>
+            </div>
+
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Testing</li>
                 <li>Game Design</li>
                 <li>Editorial</li>
               </ul>
+            </div>
 
-            <p>Buy the game here: <a href="https://www.ravensburger.de/produkte/spiele/familienspiele/scotland-yard-sherlock-holmes-edition-27344/index.html">Ravensburger Shop</a></p>
-
+            <div class="twoThirds">
+              The new character abilities for Holmes’ Team were already developed when I joined the project. In the old version one person played Mister X and could only win by escaping. Now this player plays Moriarty and can also win by committing crimes. <br>
+              But with the new player abilities, we realised during one of the many test sessions, that there is the need of an escape strategy for Moriarty. These Moriarty abilities were my main tasks during the development. I chose the locations on which Moriarty could land with his air balloon and helped figuring out the crime scene areas on the board. <br>
+              In the end we decided to use the start number tokens for Moriarty also for the landing and having always to options on one token. This way we didn’t need to setup a new layout for printing and could lower production costs.
+              In the end I was also in charge of correcting the rules, coordinating with the art director for this project, checking the final print files, and writing the instructions on how to setup the explanation pictures in the rule book.
+            </div>
+            
+            <div class="fullWidth">
+              Buy the game here: <a href="https://www.ravensburger.de/produkte/spiele/familienspiele/scotland-yard-sherlock-holmes-edition-27344/index.html">Ravensburger Shop</a>
+              <a href="https://www.ravensburger-gruppe.de/en/start/index.html">© Ravensburger AG</a>
+            </div>            
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('SherlockDescription', this, 'SherlockDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('SherlockDescription', this, 'SherlockDivId', 'SherlockPreviewID')">
             Read more
           </button>
       </div>
 
         <!--Villewälder App-->
         <div class="oneThird projectDiv" id="VillewälderDivId">
-          <h3>Villewälder App</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_Villewälder_thumb.jpeg" alt="Villewälder – in Game Screenshot: Woodpecker">
-          <h5>AR App with Serious Content</h5>
-          <a href="https://villewaelder.de/de/app">© Villewälder App</a>
+          <div class="projectPreviewDiv" id="VillewälderPreviewID">
+            <h3>Villewälder App</h3>
+            <img class="thumbnail" src="images\Villewälder\SMH_Villewälder_thumb.jpeg" alt="Villewälder – in Game Screenshot: Woodpecker">
+            <h5>AR App with Serious Content</h5>
+            <a href="https://villewaelder.de/de/app">© Villewälder App</a>
+          </div>
 
           <div class="descriptionDiv" id="VillewälderDescription">
-            <h4>Game Design Intern</h4>
-            <p><b>May – July 2019</b></p>
-            <p>App for exploring the biodiversity in the renaturalized oak forests of the "Kottenforst". The user can get to know the forest inhabitants in their natural environment and discover the protected oak forests at four stations using augmented reality.</p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>Villewälder App</h3>
+              <h4>Game Design Intern</h4>
+              <p><b>May – July 2019</b></p>
+            </div>
+
+            <div class="gallery_item oneThird">
+              <img src="images\Villewälder\SMH_Villewälder_thumb.jpeg" alt="Villewälder – in Game Screenshot: Woodpecker">
+            </div>
+            
+            <div class="twoThirds">
+              App for exploring the biodiversity in the renaturalized oak forests of the "Kottenforst". The user can get to know the forest inhabitants in their natural environment and discover the protected oak forests at four stations using augmented reality.
+            </div>
+            
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Game Design</li>
                 <li>Content Design</li>
                 <li>Wireframes/ UX</li>
               </ul>
+            </div>
+            
 
-            <div class="downloadIcon">
+            <div class="downloadIcon fullWidth">
               Download the app in the app store | <b>German only</b>
               <a href="https://play.google.com/store/apps/details?id=de.thegoodevil.villewaelder&gl=US" hreflang="en">
                 villewaelder.de/de/app
@@ -151,22 +236,36 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('VillewälderDescription', this, 'VillewälderDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('VillewälderDescription', this, 'VillewälderDivId', 'VillewälderPreviewID')">
             Read more
           </button>
         </div>
 
         <!--Parlamus-->
         <div class="oneThird projectDiv" id="ParlamusDivId">
-          <h3>Parlamus</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_Parlamus_thumb.JPG" alt="Screenshot html file: 'Parlamus Exemplarischer Ablauf'">
-          <h5>Casual Mobile Strategy Game</h5>
+          <div class="projectPreviewDiv" id="ParlamusPreviewID">
+            <h3>Parlamus</h3>
+            <img class="thumbnail" src="images\Parlamus\SMH_Parlamus_thumb.JPG" alt="Screenshot html file: 'Parlamus Exemplarischer Ablauf'">
+            <h5>Casual Mobile Strategy Game</h5>
+          </div>
 
           <div class="descriptionDiv" id="ParlamusDescription">
-            <h4>Game Designer | Team of 4</h4>
-            <p><b>November 2020 – March 2021</b></p>
-            <p>The concept was developed in the LESSoN project at the Harz University of Applied Sciences. The client was the state parliament of Saxony-Anhalt with the goal of developing a game that makes politics more appealing to young people. The player swipes through decisions that influence the satisfaction, with the goal of being re-elected.</p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>Parlamus</h3>
+              <h4>Game Designer | Team of 4</h4>
+              <b>November 2020 – March 2021</b>
+            </div>
+            
+            <div class="gallery_item oneThird">
+              <img src="images\Parlamus\SMH_Parlamus_thumb.JPG" alt="Screenshot html file: 'Parlamus Exemplarischer Ablauf'">
+            </div>
+
+            <div class="twoThirds">
+              The concept was developed in the LESSoN project at the Harz University of Applied Sciences. The client was the state parliament of Saxony-Anhalt with the goal of developing a game that makes politics more appealing to young people. The player swipes through decisions that influence the satisfaction, with the goal of being re-elected.
+            </div>
+            
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Research and Analysis</li>
@@ -174,17 +273,22 @@
                 <li>Concept presentations</li>
                 <li>Contact person for the state parliament</li>
               </ul>
+            </div>
+            
 
-            <div class="downloadIcon">
+            <div class="downloadIcon fullWidth">
               Download the exemplary process as a html webpage to get an idea on the concept. |<b>German only</b>
-              <a href="files\Projects\HeyneSabineM_Parlamus(Exemplarischer Ablauf).html" download hreflang="de">
+              <button>
+                <a href="files\Projects\HeyneSabineM_Parlamus(Exemplarischer Ablauf).html" download hreflang="de">
                   <img src="images\Download-icon.png" alt="Download Icon">
               </a>
+              </button>
+              
             </div>
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('ParlamusDescription', this, 'ParlamusDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('ParlamusDescription', this, 'ParlamusDivId', 'ParlamusPreviewID')">
             Read more
           </button>
         </div>
@@ -194,43 +298,85 @@
 
         <!--Master thesis-->
         <div class="oneThird projectDiv" id="MasterthesisDivId">
-          <h3>Master thesis</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_Masterthesis_Ravensburger_thumb.png" alt="Masterthesis Ravensburger: Boardgame with the tiptoi©">
-          <h5>Serious game with the tiptoi®</h5>
-          © Ravensburger AG
+          <div class="projectPreviewDiv" id="MasterthesisPreviewID">
+            <h3>Master thesis</h3>
+            <img class="thumbnail" src="images\MasterThesis\SMH_Masterthesis_Ravensburger_thumb.png" alt="Masterthesis Ravensburger: Boardgame with the tiptoi©">
+            <h5>Serious game with the tiptoi®</h5>
+            © Ravensburger AG
+          </div>
 
           <div class="descriptionDiv" id="MasterthesisDescription">
-            <h4>Solo Project</h4>
-            <p><b>February – June 2021</b></p>
-            <p>Transportation game in which the players have to collect fruits with their ships. To find the food they have to visit the small islands and on some of them are fruits. Collecting is possible with fulfilling small motorical tasks. But beware of the upcoming storm and never forget on which islands you’ve already been!</p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>Master thesis</h3>
+              <h4>Solo Project</h4>
+              <b>February – June 2021</b>
+            </div>
+
+            <div class="gallery_item oneThird">
+              <img src="images\MasterThesis\SMH_Masterthesis_Ravensburger_thumb.png" alt="Masterthesis Ravensburger: Boardgame with the tiptoi©">
+            </div>
+            
+            <div class="twoThirds">
+              Transportation game in which the players have to collect fruits with their ships. To find the food they have to visit the small islands and on some of them are fruits. Collecting is possible with fulfilling small motorical tasks. But beware of the upcoming storm and never forget on which islands you’ve already been!
+            </div>
+
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Content Research</li>
                 <li>Competitive Analyse</li>
                 <li>Game Design</li>
                 <li>Prototype building</li>
+                <li>Visual Design</li>
               </ul>
+            </div>
+
+            <div class="twoThirds">
+              The tiptoi transforms analogue media into an audio-supported experience. Basically you take the tiptoi, tap on a surface that has a fine point grid printed on it and the device reads a number from it. This defines, which audio to play. The device can handle actual logic and therefore you can program states, conditions etc and which text to play afterwards.
+              I went through multiple iterations within the project time and tried to keep the gameplay as simple as possible. My biggest problem was that I couldn’t test with more then one friend due to Covid.
+              I built several prototypes and illustrated the last version a bit, so I could import the assets to Table Top Simulator for a final round with 4 testers.
+              I had to prepare all the logic connections and needed texts. Which the tiptoi then would play, to simulate the gameplay.
+            </div>
+            
+            <div class="fullWidth">
+              © Ravensburger AG
+            </div>
+            
 
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('MasterthesisDescription', this, 'MasterthesisDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('MasterthesisDescription', this, 'MasterthesisDivId', 'MasterthesisPreviewID')">
             Read more
           </button>
         </div>
 
         <!--Sheep Roll-->
         <div class="oneThird projectDiv" id="SheepRollDivId">
-          <h3>Sheep Roll</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_SheepRoll_thumb.jpeg" alt="In Game Screenshot: SheepRoll">
-          <h5>Puzzle Game</h5>
+          <div class="projectPreviewDiv" id="SheepRollPreviewID">
+            <h3>Sheep Roll</h3>
+            <img class="thumbnail" src="images\Sheep\SMH_SheepRoll_thumb.jpeg" alt="In Game Screenshot: SheepRoll">
+            <h5>Puzzle Game</h5>
+          </div>
 
           <div class="descriptionDiv" id="SheepRollDescription">
-            <h4>Two people project</h4>
-            <p><b>March – August 2020</b></p>
-            <p>SheepRoll is a tile and turn based puzzle game. The player controls the sheep and tries to move the ingredients in the right order on the sushi mat to prepare sushi for the flamingo. </p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>SheepRoll</h3>
+              <h4>Two people project</h4>
+              <b>March – August 2020</b>
+            </div>
+
+            <div class="gallery_item oneThird">
+              <img src="images\Sheep\SMH_SheepRoll_thumb.jpeg" alt="In Game Screenshot: SheepRoll">
+            </div>
+            
+            <div class="twoThirds">
+              SheepRoll is a tile and turn based puzzle game. The player controls the sheep and tries to move the ingredients in the right order on the sushi mat to prepare sushi for the flamingo.
+            </div>
+            
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Competitive Analysis</li>
@@ -239,17 +385,21 @@
                 <li>Testing</li>
               </ul>
 
+            </div>
+            
             <div class="downloadIcon">
               Download the unity build to play on Windows.
-              <a href="files\Projects\HeyneSabineM_SheepRoll_Build.zip" download hreflang="en">
+              <button>
+                <a href="files\Projects\HeyneSabineM_SheepRoll_Build.zip" download hreflang="en">
                   <img src="images\Download-icon.png" alt="Download Icon">
-
               </a>
+              </button>
+              
             </div>
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('SheepRollDescription', this, 'SheepRollDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('SheepRollDescription', this, 'SheepRollDivId', 'SheepRollPreviewID')">
             Read more
           </button>
 
@@ -257,15 +407,29 @@
 
         <!--Hamstermarkt-->
         <div class="oneThird projectDiv" id="HamstermarktDivId">
-          <h3>Hamstermarkt</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_Hamstermark_thumb.png" alt="Hamstermarkt">
-          <h5>Competitive Maze Runner</h5>
+          <div class="projectPreviewDiv" id="HamstermarktPreviewID">
+            <h3>Hamstermarkt</h3>
+            <img class="thumbnail" src="images\Hamster\SMH_Hamstermark_thumb.png" alt="Hamstermarkt">
+            <h5>Competitive Maze Runner</h5>
+          </div>
 
           <div class="descriptionDiv" id="HamstermarktDescription">
-            <h4>Team Project | 4 people</h4>
-            <p><b>March – August 2020</b></p>
-            <p>The goal of the Game Development course was to develop a game about Covid-19. The result is a maze runner where two players compete against each other as hamsters. They try to collect the required objects as fast as possible without getting or being infected in the process.</p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>Hamstermarkt</h3>
+              <h4>Team Project | 4 people</h4>
+              <p><b>March – August 2020</b></p>
+            </div>
+            
+            <div class="gallery_item oneThird">
+              <img src="images\Hamster\SMH_Hamstermark_thumb.png" alt="Hamstermarkt">
+            </div>
+
+            <div class="twoThirds">
+              The goal of the Game Development course was to develop a game about Covid-19. The result is a maze runner where two players compete against each other as hamsters. They try to collect the required objects as fast as possible without getting or being infected in the process.
+            </div>
+
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Game Design</li>
@@ -274,30 +438,49 @@
                 <li>Testing</li>
               </ul>
 
-            <div class="downloadIcon">
+            </div>
+          
+            
+            <div class="downloadIcon fullWidth">
               Download the unity build to play on Windows.
-              <a href="files\Projects\HeyneSabineM_Hamstermarkt_Build.zip" download hreflang="en">
+              <button>
+                <a href="files\Projects\HeyneSabineM_Hamstermarkt_Build.zip" download hreflang="en">
                   <img src="images\Download-icon.png" alt="Download Icon">
               </a>
+              </button>
             </div>
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('HamstermarktDescription', this, 'HamstermarktDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('HamstermarktDescription', this, 'HamstermarktDivId', 'HamstermarktPreviewID')">
             Read more
           </button>
         </div>
 
         <!--Schau mal-->
         <div class="oneThird projectDiv" id="SchauMalDivId">
-          <h3>Schau Mal</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_SchauMal_thumb.png" alt="Schau Mal in Trier">
-          <h5>Interactive installation</h5>
+          <div class="projectPreviewDiv" id="SchauMalPreviewID">
+            <h3>Schau mal</h3>
+            <img class="thumbnail" src="images\Schau\SMH_SchauMal_thumb.png" alt="Schau Mal in Trier">
+            <h5>Interactive installation</h5>
+          </div>
 
           <div class="descriptionDiv" id="SchauMalDescription">
-            <h4>Solo project</h4>
-            <p><b>October 2016 – February 2018</b></p>
-            <p>An interactive installation, which was on display for several months at three different locations in the city of Trier. The protagonist Fianna imitates the movements of the pedestrians and thereupon shows her own world. The aim is to make people in everyday life look up and experience the world around them more actively.</p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>Schau mal</h3>
+              <h4>Solo project</h4>
+              <b>October 2016 – February 2018</b>
+            </div>
+
+            <div class="gallery_item oneThird">
+              <img src="images\Schau\SMH_SchauMal_thumb.png" alt="Schau Mal in Trier">
+            </div>
+            
+            <div class="twoThirds">
+              An interactive installation, which was on display for several months at three different locations in the city of Trier. The protagonist Fianna imitates the movements of the pedestrians and thereupon shows her own world. The aim is to make people in everyday life look up and experience the world around them more actively.
+            </div>
+            
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Concept and organisation</li>
@@ -308,19 +491,17 @@
                 <li>Setup</li>
               </ul>
 
-            <a href="https://Facebook.com/SchauMalTrier" hreflang="en">
-              <div class="thumbnailDiv">
-                Facebook.com/SchauMalTrier
-              </div>
-            </a>
-
-            <a href="#schauVideo" id="showSchau" onclick="toggleVideo('schauVideo', this)">
-              <div class="thumbnailDiv">
-                <img class="thumbnail" src="files\thumbnails\SMH_SchauMal_thumb.png" alt="Schau mal! video">
-                <div class="thumbnailText">Click to show the video</div>
-              </div>
-            </a>
-
+            </div>
+            
+            <div class="twoThirds">
+              <a id="showSchau" onclick="toggleVideo('schauVideo', this)">
+                <div class="thumbnailDiv">
+                  <img class="thumbnail" src="images\Schau\SMH_SchauMal_thumb.png" alt="Schau mal! video">
+                  <button class="openVideo">Click to show the video</button>
+                </div>
+              </a>
+            </div>
+            
             <!-- Schau mal Video -->
             <div class="fullWidth videoDiv"  id="schauVideo">
               <video class="videoplayer" controls muted>
@@ -328,28 +509,50 @@
               Your browser does not support the video tag.
               </video>
               <a href="#schauHead" style="position: absolute;">
-                <button class="buttonOnVideo" id="hideSchau" onclick="hideVideo('schauVideo', 'showSchau')"><h5>X</h5></button>
+                <button class="buttonOnVideo" id="hideSchau" onclick="hideVideo('schauVideo', 'showSchau')">X</button>
+              </a>
+            </div>
+
+            <div class="fullWidth">
+              <a href="https://Facebook.com/SchauMalTrier" hreflang="en">
+                <div class="thumbnailDiv">
+                  Facebook.com/SchauMalTrier
+                </div>
               </a>
             </div>
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('SchauMalDescription', this, 'SchauMalDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('SchauMalDescription', this, 'SchauMalDivId', 'SchauMalPreviewID')">
             Read more
           </button>
         </div>
 
         <!--aproposluther-->
         <div class="oneThird projectDiv" id="LutherDivId">
-          <h3>aproposluther</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_luther_thumb.png" alt="aproposluther in Trier">
-          <h5>Interactive Luther exhibition</h5>
+          <div class="projectPreviewDiv" id="LutherPreviewID">
+            <h3>aproposluther</h3>
+            <img class="thumbnail" src="images\Luther\SMH_luther_thumb.png" alt="aproposluther in Trier">
+            <h5>Interactive Luther exhibition</h5>
+          </div>
 
           <div class="descriptionDiv" id="LutherDescription">
-            <h4>Interdisciplinary team project</h4>
-            <p><b>March – September 2017</b></p>
-            <p>Interactive installation with various multimedia stations on Luther's life and work as part of the Luther Year. Exhibited in the Constantine Basilica in Trier and on the square in front of.</p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>aproposluther</h3>
+              <h4>Interdisciplinary team project</h4>
+              <b>March – September 2017</b>
+            </div>
+
+            <div class="gallery_item oneThird">
+              <img class="thumbnail" src="images\Luther\SMH_luther_thumb.png" alt="aproposluther in Trier">
+            </div>
+            
+            <div class="twoThirds">
+              Interactive installation with various multimedia stations on Luther's life and work as part of the Luther Year. Exhibited in the Constantine Basilica in Trier and on the square in front of.
+            </div>
+            
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Exhibition design</li>
@@ -360,19 +563,19 @@
                 <li>Lettering</li>
               </ul>
 
-            <a href="https://Facebook.com/AproposLuther" hreflang="en">
-              <div class="thumbnailDiv">
-                Facebook.com/AproposLuther
-              </div>
-            </a>
-
-            <a href="#lutherVideo" id="showLuther" onclick="toggleVideo('lutherVideo', this)">
-              <div class="thumbnailDiv">
-                <img class="thumbnail" src="images\SMH_aproposluther_outdoors.jpg" alt="aproposluther video">
-                <div class="thumbnailText">Click to show the video</div>
-              </div>
-            </a>
-
+            </div>
+          
+            
+            <div class="twoThirds">
+              <a id="showLuther" onclick="toggleVideo('lutherVideo', this)">
+                <div class="thumbnailDiv">
+                  <img class="thumbnail" src="images\Luther\SMH_aproposluther_outdoors.jpg" alt="aproposluther video">
+                  <button class="openVideo">Click to show the video</button>
+                </div>
+              </a>
+  
+            </div>
+            
             <!-- aproposluther Video -->
             <div class="fullWidth videoDiv"  id="lutherVideo">
               <video class="videoplayer" controls muted>
@@ -380,28 +583,50 @@
               Your browser does not support the video tag.
               </video>
               <a href="#lutherHead" style="position: absolute;">
-                <button class="buttonOnVideo" id="hideLuther" onclick="hideVideo('lutherVideo', 'showLuther')"><h5>X</h5></button>
+                <button class="buttonOnVideo" id="hideLuther" onclick="hideVideo('lutherVideo', 'showLuther')">X</button>
+              </a>
+            </div>
+
+            <div class="fullWidth">
+              <a href="https://Facebook.com/AproposLuther" hreflang="en">
+                <div class="thumbnailDiv">
+                  Facebook.com/AproposLuther
+                </div>
               </a>
             </div>
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('LutherDescription', this, 'LutherDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('LutherDescription', this, 'LutherDivId', 'LutherPreviewID')">
             Read more
           </button>
         </div>
 
         <!--Geliefert-->
         <div class="oneThird projectDiv" id="GeliefertDivId">
-          <h3>Geliefert</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_Geliefert_thumb.png" alt="Board Game Geliefert">
-          <h5>Transportation game</h5>
+          <div class="projectPreviewDiv" id="GeliefertPreviewID"> 
+            <h3>Geliefert</h3>
+            <img class="thumbnail" src="images\Geliefert\SMH_Geliefert_thumb.png" alt="Board Game Geliefert">
+            <h5>Transportation game</h5>
+          </div>
 
           <div class="descriptionDiv" id="GeliefertDescription">
-            <h4>Solo project</h4>
-            <p><b>September 2019 – January 2020</b></p>
-            <p>A game in which players become logistics experts. Competing against each other, they must use their transporters to pick up goods from stores, use or bypass construction sites as efficiently as possible, and deliver orders as quickly as they can.</p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>Geliefert</h3>
+              <h4>Solo project</h4>
+              <p><b>September 2019 – January 2020</b></p>
+            </div>
+
+            <div class="gallery_item oneThird">
+              <img src="images\Geliefert\SMH_Geliefert_thumb.png" alt="Board Game Geliefert">
+            </div>
+            
+            <div class="twoThirds">
+              A game in which players become logistics experts. Competing against each other, they must use their transporters to pick up goods from stores, use or bypass construction sites as efficiently as possible, and deliver orders as quickly as they can.
+            </div>
+
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Game Design</li>
@@ -410,16 +635,21 @@
                 <li>Playtesting</li>
               </ul>
 
-            <div class="downloadIcon">
+            </div>
+                        
+            <div class="downloadIcon fullWidth">
               Download the pdf manual from the board game "Geliefert". | <b>German only</b>
-              <a href="files\Projects\HeyneSabineM_Geliefert_Spielregeln.pdf" download hreflang="en">
+              <button>
+                <a href="files\Projects\HeyneSabineM_Geliefert_Spielregeln.pdf" download hreflang="en">
                   <img src="images\Download-icon.png" alt="Download Icon">
               </a>
+              </button>
+              
             </div>
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('GeliefertDescription', this, 'GeliefertDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('GeliefertDescription', this, 'GeliefertDivId', 'GeliefertPreviewID')">
             Read more
           </button>
         </div>
@@ -430,60 +660,96 @@
 
         <!--Your universe-->
         <div class="oneThird projectDiv" id="UniverseDivId">
-          <h3>Your Universe</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_YourUniverse_thumb.jpg" alt="Your Universe thumbnail">
-          <h5>2D Health Game on Depression | Game Jam</h5>
+          <div class="projectPreviewDiv" id="UniversePreviewID">
+            <h3>Your Universe</h3>
+            <img class="thumbnail" src="images\Universe\SMH_YourUniverse_thumb.jpg" alt="Your Universe thumbnail">
+            <h5>2D Health Game on Depression | Game Jam</h5>
+          </div>
 
           <div class="descriptionDiv" id="UniverseDescription">
-            <h4>Team project</h4>
-            <p><b>May 2022</b></p>
-            <p>This game was developed during the Health Game Jam in 2022. It was organised under the sign of mental health by <a href="https://games-ahead.de/5-health-game-jam/">gamesAHEAD</a> in cooperation with the Goethe-Institut and the ThaiHealth Foundation.
+
+            <div class="fullWidth">
+              <h3>Your Universe</h3>
+              <h4>Team project</h4>
+              <p><b>May 2022</b></p>
+            </div>
+
+            <div class="gallery_item oneThird">
+              <img src="images\Universe\SMH_YourUniverse_thumb.jpg" alt="Your Universe thumbnail">
+            </div>
+            
+            <div class="twoThirds">
+              This game was developed during the Health Game Jam in 2022. It was organised under the sign of mental health by <a href="https://games-ahead.de/5-health-game-jam/">gamesAHEAD</a> in cooperation with the Goethe-Institut and the ThaiHealth Foundation.
               The intended goal was to show, that even small decisions make a difference for the own point of view. A person that might have a mental difficulty might not be aware of the other possibilities. This way it's very hard to understand, that there might be a way out. <br>
-              We hope that the little fish in this game show that a helping hand or a gesture might bring some more colour or brightness to someone elses life.</p>
+              We hope that the little fish in this game show that a helping hand or a gesture might bring some more colour or brightness to someone elses life.
+            </div>
+            
+            <div class="oneThird">
               <h5>My Tasks</h5>
 
-                <ul>
-                  <li>Game Design</li>
-                  <li>Conncept</li>
-                  <li>Unity implementation</li>
-                  <li>UX</li>
-                </ul>
-
-            <div class="downloadIcon">
+              <ul>
+                <li>Game Design</li>
+                <li>Conncept</li>
+                <li>Unity implementation</li>
+                <li>UX</li>
+              </ul>
+            </div>
+              
+            <div class="downloadIcon fullWidth">
               Downlad the unity build to play.
-              <a href="files\Projects\HeyneSabineM_YourUniverse_Build.zip" download hreflang="en">
+              <button>
+                <a href="files\Projects\HeyneSabineM_YourUniverse_Build.zip" download hreflang="en">
                   <img src="images\Download-icon.png" alt="Download Icon">
               </a>
+              </button>
+              
               <br>
               Or check out the it the Game Jam page: <a href="https://maggygm.itch.io/your-universe">maggygm.itch.io/your-universe</a>
             </div>
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('UniverseDescription', this, 'UniverseDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('UniverseDescription', this, 'UniverseDivId', 'UniversePreviewID')">
             Read more
           </button>
         </div>
 
         <!--Couchtree App-->
         <div class="oneThird projectDiv" id="CouchTreeDivId">
-          <h3>Couch Tree App</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_CouchtreeApp_thumb.jpg" alt="Couch Tree App thumbnail">
-          <h5>Your App to plant at home | Game Jam</h5>
+          <div class="projectPreviewDiv" id="CouchTreePreviewID">
+            <h3>Couch Tree App</h3>
+            <img class="thumbnail" src="images\CouchTree\SMH_CouchtreeApp_thumb.jpg" alt="Couch Tree App, 3 in game screenshots">
+            <h5>Your App to plant at home | Game Jam</h5>
+          </div>
 
           <div class="descriptionDiv" id="CouchTreeDescription">
-            <h4>Team project</h4>
-            <p><b>March 2020</b></p>
-            <p>This game was developed during the "wir-vs-virus hackathon" in 2020" initiated by the german government.<br>
-              To playfully reward staying at home in times of the pandemics we developed an App in a big team of about 50 people. By staying at home you can protect your plants, that are endangered by a pest. If you stay out for too long they will start fading away. Grow your tree, collect new plants and virtually battle along with your friends.</p>
+            <div class="fullWidth">
+              <h3>Couch Tree App</h3>
+              <h4>Team project</h4>
+              <p><b>March 2020</b></p>
+            </div>
+            
+            <div class="gallery_item oneThird">
+              <img src="images\CouchTree\SMH_CouchtreeApp_thumb.jpg" alt="Couch Tree App, 3 in game screenshots">
+            </div>
+
+            <div class="twoThirds">
+              This game was developed during the "wir-vs-virus hackathon" in 2020" initiated by the german government.<br>
+              To playfully reward staying at home in times of the pandemics we developed an App in a big team of about 50 people. By staying at home you can protect your plants, that are endangered by a pest. If you stay out for too long they will start fading away. Grow your tree, collect new plants and virtually battle along with your friends.
+            </div>
+
+            <div class="oneThird">
               <h5>My Tasks</h5>
 
-                <ul>
-                  <li>Concept</li>
-                  <li>Visual Design</li>
-                  <li>Social Media</li>
-                </ul>
+              <ul>
+                <li>Concept</li>
+                <li>Visual Design</li>
+                <li>Social Media</li>
+              </ul>
 
-            <div class="downloadIcon">
+            </div>
+            
+              
+            <div class="downloadIcon fullWidth">
               Watch the video:
               <a href="https://www.youtube.com/watch?v=ihcgZmwXvtg" hreflang="en"> Youtube/CouchTreeApp
               </a>
@@ -492,30 +758,46 @@
             </div>
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('CouchTreeDescription', this, 'CouchTreeDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('CouchTreeDescription', this, 'CouchTreeDivId', 'CouchTreePreviewID')">
             Read more
           </button>
         </div>
 
         <!--H.O.R.N. of Happiness-->
         <div class="oneThird projectDiv" id="HornDivId">
-          <h3>H.O.R.N. of Happiness</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_HORN_thumb.png" alt="Table Top Game H.O.R.N. of Happiness">
-          <h5>Analog RPG | GGJ 2018</h5>
+          <div class="projectPreviewDiv" id="HornPreviewID">
+            <h3>H.O.R.N. of Happiness</h3>
+            <img class="thumbnail" src="images\HORN\SMH_HORN_thumb.png" alt="Table Top Game H.O.R.N. of Happiness">
+            <h5>Analog RPG | GGJ 2018</h5>
+          </div>
 
           <div class="descriptionDiv" id="HornDescription">
-            <h4>Team project</h4>
-            <p><b>January 2018</b></p>
-            <p>This analog game was developed at the Global Game Jam 2018.<br>
-            A light-hearted RPG about time travelling magical beings bringing happiness and kindness to places and times that are transmitting waves of sadness. H.O.R.N of Happiness is a social roleplaying game, so telling stories and being together with your friends is just as important as winning - if not even more so. </p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>H.O.R.N. of Happiness</h3>
+              <h4>Team project</h4>
+              <b>January 2018</b>
+            </div>
+            
+            <div class="gallery_item oneThird">
+              <img src="images\HORN\SMH_HORN_thumb.png" alt="Table Top Game H.O.R.N. of Happiness">
+            </div>
+
+            <div class="twoThirds">
+              This analog game was developed at the Global Game Jam 2018.<br>
+              A light-hearted RPG about time travelling magical beings bringing happiness and kindness to places and times that are transmitting waves of sadness. H.O.R.N of Happiness is a social roleplaying game, so telling stories and being together with your friends is just as important as winning - if not even more so.
+            </div>
+            
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Game Design</li>
                 <li>Visual Design</li>
               </ul>
 
-            <div class="downloadIcon">
+            </div>
+            
+            <div class="downloadIcon fullWidth">
               Download the print outs and the instruction:
               <a href="files\Projects\HeyneSabineM_H.O.R.N.-Of-Happiness.zip" download hreflang="en">
                   <img src="images\Download-icon.png" alt="Download Icon">
@@ -528,87 +810,57 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('HornDescription', this, 'HornDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('HornDescription', this, 'HornDivId', 'HornPreviewID')">
             Read more
           </button>
         </div>
 
         <!--Night as Day-->
         <div class="oneThird projectDiv" id="NightAsDayDivId">
-          <h3>Night as Day</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_night-day_thumb.png" alt="2D RPG Night as Day Thumbnail">
-          <h5>2D RPG | GGJ 2022</h5>
+          <div class="projectPreviewDiv" id="NightPreviewID">
+            <h3>Night as Day</h3>
+            <img class="thumbnail" src="images\Night\SMH_night-day_thumb.png" alt="2D RPG Night as Day Thumbnail">
+            <h5>2D RPG | GGJ 2022</h5>
+          </div>
 
           <div class="descriptionDiv" id="NightAsDayDescription">
-            <h4>Team project</h4>
-            <p><b>January 2022</b></p>
-            <p>This 2D game was developed at the Global Game Jam 2022. Find out about the story of Dean, visiting the place of his childhood.</p>
-            <h5>My Tasks</h5>
+            <div class="fullWidth">
+              <h3>Night as Day</h3>
+              <h4>Team project</h4>
+              <b>January 2022</b>
+            </div>
+            
+            <div class="gallery_item oneThird">
+              <img src="images\Night\SMH_night-day_thumb.png" alt="2D RPG Night as Day Thumbnail">
+            </div>
+
+            <div class="twoThirds">
+              This 2D game was developed at the Global Game Jam 2022. Find out about the story of Dean, visiting the place of his childhood.
+            </div>
+            
+            <div class="oneThird">
+              <h5>My Tasks</h5>
 
               <ul>
                 <li>Game Design</li>
                 <li>Implementation of visuals and animations in Unity</li>
               </ul>
 
-            <a href="https://globalgamejam.org/2022/games/night-day-5" hreflang="en">
-              Check the GGJ website to download the game:
-              <div class="thumbnailDiv">
-                globalgamejam.org/2022/games/night-day-5
-              </div>
-            </a>
+            </div>
+            
+            <div class="fullWidth">
+              <a href="https://globalgamejam.org/2022/games/night-day-5" hreflang="en">
+                Check the GGJ website to download the game:
+                <div class="thumbnailDiv">
+                  globalgamejam.org/2022/games/night-day-5
+                </div>
+              </a>
+            </div>
+            
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('NightAsDayDescription', this, 'NightAsDayDivId')">
-            Read more
-          </button>
-        </div>
-
-        <!--It's a Creature not a Feature-->
-        <div class="oneThird projectDiv" id="CreatureDivId">
-          <h3>It's a Creature not a Feature</h3>
-          <img class="thumbnail" src="files\thumbnails\SMH_CreatureGame_thumb.png" alt="2D RPG Night as Day Thumbnail">
-          <h5>2D Top down runner | Game Jam</h5>
-
-          <div class="descriptionDiv" id="CreatureDescription">
-            <h4>Team project</h4>
-            <p><b>December 2020</b></p>
-            <p>This project was developed within 24h at the MINFF Jam at our university.</p>
-            <h5>My Tasks</h5>
-
-              <ul>
-                <li>Concept</li>
-                <li>Visual Design</li>
-              </ul>
-
-            <div class="downloadIcon">
-              Download the unity build to play on Windows.
-              <a href="files\Projects\HeyneSabineM_CreatureNotFeature_Build.zip" download hreflang="en">
-                  <img src="images\Download-icon.png" alt="Download Icon">
-              </a>
-            </div>
-
-              Or check out the storyline of the game in the video above. |<b>German text</b>
-            <a href="#creatureVideo" id="showCreature" onclick="toggleVideo('creatureVideo', this)">
-              <div class="thumbnailDiv">
-                <img class="thumbnail" src="files\thumbnails\SMH_Creature_thumb.png" alt="It's a creature not a feature – video">
-                <div class="thumbnailText">Click to show the video</div>
-              </div>
-            </a>
-
-            <!-- Creature not Feature Video -->
-            <div class="fullWidth videoDiv"  id="creatureVideo">
-              <video class="videoplayer" controls muted>
-                <source src="files\Projects\HeyneSabineM_CreatureNotFeature_Film.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-              <a href="#creatureHead" style="position: absolute;">
-                <button class="buttonOnVideo" id="hideCreature" onclick="hideVideo('creatureVideo', 'showCreature')"><h5>X</h5></button>
-              </a>
-            </div>
-          </div>
-
-          <button class="toggleDescriptionButton" onclick="toggleDescription('CreatureDescription', this, 'CreatureDivId')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription('NightAsDayDescription', this, 'NightAsDayDivId', 'NightPreviewID')">
             Read more
           </button>
         </div>
@@ -636,7 +888,7 @@
           <p>
             <img src="images/LI-In-Bug.png" alt="LinkedIn" class="logo"><a href="https://www.linkedin.com/in/smheyne/">Visit my LinkedIn Profile</a> <br>
             <img src="images\GitHub-Mark-32px.png" alt="GitHub" class="logo"><a href="https://github.com/SMHeyne">Visit my GitHub page</a> <br>
-            <img src="images\Exercism-logo.svg" alt="Exercism" class="logo"><a href="https://exercism.org/profiles/SMHeyne">Visit my Exercism page</a>
+            <img src="images\Exercism-logo.svg" alt="Exercism" class="logo" style="bottom: -0.3rem;position: relative;"><a href="https://exercism.org/profiles/SMHeyne">Visit my Exercism page</a>
 
           </p>
         </div>
@@ -663,7 +915,7 @@
         <p id="recipe" onclick="off()" name="recipe"><a href="recipe.html">To the recipe!</a></p>
       </div>
 
-      <button id="close" onclick="off()" type="" name="close"><h3 style="padding: 0.1em 0.5em;">X</h3></button>
+      <button class="closeButton" onclick="off()" type="" name="close">X</button>
     </div>
   </div>
 
@@ -674,6 +926,7 @@
   <script src="project-description.js"></script>
   <script src="hamburgerMenu.js"></script>
   <script src="selectionMenuHome.js"></script>
+  <script defer src="modalImages.js"></script>
 
 
 </body>

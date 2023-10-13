@@ -999,3 +999,14 @@ button a:hover{
   padding: 1rem;
   padding-left: 0;
 }
+
+.textHighlights{
+  
+  font-family: 'Open Sans Regular';
+  font-size: 1.5rem;
+  background-color: #FFD96B;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  margin: 1.5rem;
+}

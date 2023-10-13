@@ -1015,6 +1015,7 @@ button a:hover{
   font-size: 1.2rem;
   align-items:center;
   display: flex;
+  padding-top: 0.5rem;
 }
 
 .skillName{

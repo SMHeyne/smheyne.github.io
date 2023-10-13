@@ -12,11 +12,13 @@ images.forEach((img) => {
 let imgModal = (src) => {
     const modal = document.createElement("div");
     modal.setAttribute("class", "modal");
+    modal.addEventListener("click", (event) => modal.remove());
     //add the modal to the main section or the parent element
     document.querySelector(".whiteBackground").append(modal);
     //adding image to modal
     const newImage = document.createElement("img");
     newImage.setAttribute("src", src);
+    newImage.setAttribute("id", "modal_img")
     //creating the close button
     const closeButton = document.createElement("button");
     closeButton.setAttribute("class", "closeButton");
@@ -34,3 +36,5 @@ let imgModal = (src) => {
 
     modal.append(newImage, closeButton);
 };
+
+

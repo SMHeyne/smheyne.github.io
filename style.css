@@ -669,6 +669,159 @@ input:checked + .slider .off
 
 */
 
+/* Video player for project videos */
+
+.videoplayer{
+  width: 100%;
+  height: auto;
+  z-index: 200;
+  max-width: 1000px;
+}
+
+.videoDiv{
+  visibility: collapse;
+  display: none;
+}
+
+.buttonToggleVideo{
+  position: absolute;
+  display: flex;
+  margin: 0.5rem 0.8rem;
+  bottom: 1rem;
+  padding: 1.5rem;
+  background-color: #FFD96B94;
+}
+
+.buttonOnVideo{
+  position: absolute;
+  margin: 1rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #ffda6bcb;
+  z-index: 210;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+}
+
+.buttonOnVideo h5{
+  margin: 0;
+}
+
+
+/*___Project Descriptions__*/
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.gallery_item{
+  padding: 0.5rem;
+
+}
+
+.gallery_item img {
+  max-width: 100%;
+  max-height: 50vh;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery_item img:hover{
+  transform: scale(1.05);
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffda6b7e;
+  margin-top: -1px;
+  animation: zoom 0.3s ease-in-out;
+  z-index: 150;
+}
+
+.modal img {
+  max-width: 95vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.descriptionDiv{
+  visibility: collapse;
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.toggleDescriptionButton{
+  display: block;
+  margin: 0.5rem 0;
+  color: #216966;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  border: 1px solid #FFD96B !important;
+}
+
+.toggleDescriptionButton:hover{
+  background-color: #FCFCFC;
+  color: #216966;
+}
+
+.projectDiv .fullWidth{
+  padding: 0;
+}
+.projectDiv .twoThirds{
+  padding: 1rem;
+  padding-left: 0rem;
+}
+.projectDiv .oneThird{
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.textHighlights{
+  
+  font-family: 'Open Sans Regular';
+  font-size: 1.3rem;
+  background-color: #FFD96B;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  margin: 1.5rem;
+}
+
+.textHighlights.oneThird{
+  float: right;
+}
+
+.skillItem{
+  font-size: 1.2rem;
+  align-items:center;
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.skillName{
+  width: 150px;
+}
+
+.skillPoints{
+  vertical-align: middle;
+  display: inline-flex;
+}
+
+.skillPoints img{
+  width: 1.5rem;
+  height: auto;
+  margin: 0.1rem;
+}
+
 #allProjects{
   display: flex;
   visibility: visible;
@@ -786,6 +939,11 @@ button a:hover{
   #selectionMenuHome{
     max-width: 80%;
   }
+
+  .textHighlights.oneThird{
+    
+    width: 33%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -823,6 +981,15 @@ button a:hover{
      text-align: left !important;
    }
 
+   .textHighlights{
+    margin: 1.5rem 0rem;
+   }
+
+  .textHighlights.oneThird{
+    width: 90%;
+    margin-left: 0.8rem;
+    float: none;
+  }
 
 }
 
@@ -898,151 +1065,5 @@ button a:hover{
   }
 }
 
-/* Video player for project videos */
 
-.videoplayer{
-  width: 100%;
-  height: auto;
-  z-index: 200;
-  max-width: 1000px;
-}
 
-.videoDiv{
-  visibility: collapse;
-  display: none;
-}
-
-.buttonToggleVideo{
-  position: absolute;
-  display: flex;
-  margin: 0.5rem 0.8rem;
-  bottom: 1rem;
-  padding: 1.5rem;
-  background-color: #FFD96B94;
-}
-
-.buttonOnVideo{
-  position: absolute;
-  margin: 1rem;
-  padding: 0.5rem 0.8rem;
-  background-color: #ffda6bcb;
-  z-index: 210;
-  top: 0;
-  right: 0;
-  font-size: 1.2rem;
-}
-
-.buttonOnVideo h5{
-  margin: 0;
-}
-
-/*___Project Descriptions__*/
-
-.gallery{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.gallery_item{
-  padding: 0.5rem;
-
-}
-
-.gallery_item img {
-  max-width: 100%;
-  max-height: 50vh;
-  transition: 0.3s ease-in-out;
-}
-
-.gallery_item img:hover{
-  transform: scale(1.05);
-}
-
-.modal {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffda6b7e;
-  margin-top: -1px;
-  animation: zoom 0.3s ease-in-out;
-  z-index: 150;
-}
-
-.modal img {
-  max-width: 1000px;
-  width: 95vw;
-  height: auto;
-  object-fit: cover;
-}
-
-.descriptionDiv{
-  visibility: collapse;
-  display: none;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.toggleDescriptionButton{
-  display: block;
-  margin: 0.5rem 0;
-  color: #216966;
-  border-radius: 5px;
-  padding: 0.2rem 1rem;
-  border: 1px solid #FFD96B !important;
-}
-
-.toggleDescriptionButton:hover{
-  background-color: #FCFCFC;
-  color: #216966;
-}
-
-.projectDiv .fullWidth{
-  padding: 0;
-}
-.projectDiv .twoThirds{
-  padding: 1rem;
-  padding-left: 0rem;
-}
-.projectDiv .oneThird{
-  padding: 1rem;
-  padding-left: 0;
-}
-
-.textHighlights{
-  
-  font-family: 'Open Sans Regular';
-  font-size: 1.3rem;
-  background-color: #FFD96B;
-  border-radius: 10px;
-  padding: 1rem;
-  padding-left: 1.5rem;
-  margin: 1.5rem;
-}
-
-.skillItem{
-  font-size: 1.2rem;
-  align-items:center;
-  display: flex;
-  padding-top: 0.5rem;
-}
-
-.skillName{
-  width: 150px;
-}
-
-.skillPoints{
-  vertical-align: middle;
-  display: inline-flex;
-}
-
-.skillPoints img{
-  width: 1.5rem;
-  height: auto;
-  margin: 0.1rem;
-}

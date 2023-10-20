@@ -6,6 +6,11 @@
 }
 
 @font-face {
+  font-family: "Expletus Sans Regular";
+  src: url("./fonts/ExpletusSans-Regular.ttf");
+}
+
+@font-face {
   font-family: "Open Sans Bold";
   src: url("./fonts/OpenSans-Bold.ttf");
 }
@@ -47,16 +52,6 @@ h1 {
 
 }
 
-#hello {
-  color: #216966;    /*dunkler türkis*/
-  font-family: "Open Sans Light";
-  font-size: 3rem;
-
-  text-align: left;
-  padding-top: 1.5rem;
-  padding-bottom: 0.2rem;
-}
-
 h1, h2, h3, h4, h5, p, a, span {
   margin: 0;
   text-align: left;
@@ -76,13 +71,15 @@ h2 {
 
 h3 {
   color: #136d52;
-  font-family: "Open Sans Bold";
+  font-family: "Open Sans Semibold";
   font-size: 1.5rem;
 
   padding-top: 0.5rem;
   margin-bottom: 0.5rem;
   column-span: all;
   margin-top: 1rem;
+  word-break: normal;
+  
 }
 
 h4{
@@ -137,6 +134,10 @@ a{
 a:hover{
     background-color: #ffda6b8c;
     border-radius: 5px;
+}
+
+h4 a{
+  text-decoration: none;
 }
 
 ul{
@@ -501,8 +502,8 @@ button.nav-toggle{
   position: absolute;
   right: 5rem;
   top: 9rem;
-  max-height: 30rem;
-  min-height: 80px;
+  max-height: 60vh;
+  min-height: 20vh;
   z-index: 0;
   -webkit-min-device-pixel-ratio: 2;
 }
@@ -564,34 +565,25 @@ button.nav-toggle{
   bottom: 0;
 }
 
-/*_______HOME SCREEN: SELECTION BETWEEN CONTACT AND PROJECT VIEW*/
+/* start page full height*/
 
-#selectionMenuHome{
-  /*display: flex;
-  flex-direction: row;
-  background-color: #FCFCFC;
-  min-width: 20vw;
-  justify-content: center;
-  border: 1px solid #FFD96B !important;
-  border-radius: 5px;
-  margin: auto;
-  */
-  max-width: 80%;
-  max-width: 50rem;
+.startArea{
+  margin-bottom: 5rem;
 }
 
-#seeProjects{
-  border-right: 0.2rem #216966 solid !important;
-  padding: 1rem 2rm;
-  flex-grow: 1;
+#hello {
+  color: #216966;    /*dunkler türkis*/
+  font-family: "Expletus Sans Regular";
+  font-size: 3rem;
+  text-align: left;
+  padding-bottom: 0.2rem;
 }
 
-#seeContactInfo{
-  padding: 1rem 2rem;
-  flex-grow: 1;
+.startArea h3{
+  padding-top: 0;
+  margin-bottom: 5rem;
 }
 
-/*
 /* The switch - the box around the slider
 .switch {
   position: relative;
@@ -1008,7 +1000,7 @@ button a:hover{
 
   h3{
     font-size: 1.5rem;
-    display: block ruby;
+    display: block;
   }
 
   .container {

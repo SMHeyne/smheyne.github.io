@@ -12,10 +12,9 @@
 </head>
 
 <title>Sabine M. Heyne – Portfolio</title>
-<body style="position: relative; min-height: 100%; top: 0px;" onload="checkCookies()">
-<!--   <div id="top-nav" class="row">
-  </div>
-  -->
+<body onload="checkCookies()">
+  <script>0</script>
+
   <!--Box mit Name rechts oben -->
   <div class="" id="white-lines-box">
 
@@ -70,7 +69,7 @@
         <div class="oneThird projectDiv" id="WonderworldDivId">
           <div class="projectPreviewDiv" id="WonderworldPreviewID">
             <h3>Project Wonderworld</h3>
-            <img class="thumbnail" src="images\Wonderworld\SMH_Wonderworld_thumb.png" alt="Wonderworld – in Game Screenshot from the Game Screen">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Wonderworld\SMH_Wonderworld_thumb.png" alt="Wonderworld – in Game Screenshot from the Game Screen">
             <h5>Massive Local Multiplayer</h5>
             <a href="https://wondershopgames.com">© Wondershop Oy</a>
           </div>
@@ -78,7 +77,7 @@
           <div class="descriptionDiv" id="WonderworldDescription">
             <div class="fullWidth">
               <h3>Project Wonderworld</h3>
-              <h4>Jr. Game Designer @ Wondershop</h4>
+              <h4>Junior Game Designer @ Wondershop</h4>
               <p><b>July 2022 - January 2023</b></p>
             </div>
             
@@ -88,7 +87,7 @@
                 <img src="images\Wonderworld\SMH_Wonderworld_thumb.png" alt="Wonderworld – in Game Screenshot from the Game Screen">
               </div>
               <div class="gallery_item oneThird">
-                <img src="images/Wonderworld/SMH_Wonderworld_minigames.png" alt="Wonderworld – Mini Games on the Game Screen">
+                <img onclick="" src="images/Wonderworld/SMH_Wonderworld_minigames.png" alt="Wonderworld – Mini Games on the Game Screen">
               </div>
 
             </div>
@@ -154,7 +153,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('WonderworldDescription', this, 'WonderworldDivId', 'WonderworldPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -163,7 +162,7 @@
         <div class="oneThird projectDiv" id="SherlockDivId">
           <div class="projectPreviewDiv" id="SherlockPreviewID">
             <h3>Sherlock Holmes Scotland Yard</h3>
-            <img class="thumbnail" src="images\SH-ScotlandYard\SMH_SH-SY_thumb.jpg" alt="Sherlock Holmes Scotland Yard – Components shot">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\SH-ScotlandYard\SMH_SH-SY_thumb.jpg" alt="Sherlock Holmes Scotland Yard – Components shot">
             <h5>Deduction Board Game</h5>
             <a href="https://www.ravensburger-gruppe.de/en/start/index.html">© Ravensburger AG</a>
             </div>
@@ -219,7 +218,7 @@
             </div>            
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('SherlockDescription', this, 'SherlockDivId', 'SherlockPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
       </div>
@@ -228,7 +227,7 @@
         <div class="oneThird projectDiv" id="VillewälderDivId">
           <div class="projectPreviewDiv" id="VillewälderPreviewID">
             <h3>Villewälder App</h3>
-            <img class="thumbnail" src="images\Villewälder\SMH_Villewälder_thumb.jpeg" alt="Villewälder – in Game Screenshot: Woodpecker">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Villewälder\SMH_Villewälder_thumb.jpeg" alt="Villewälder – in Game Screenshot: Woodpecker">
             <h5>AR App with Serious Content</h5>
             <a href="https://villewaelder.de/de/app">© Villewälder App</a>
           </div>
@@ -299,7 +298,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('VillewälderDescription', this, 'VillewälderDivId', 'VillewälderPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -308,7 +307,7 @@
         <div class="oneThird projectDiv" id="ParlamusDivId">
           <div class="projectPreviewDiv" id="ParlamusPreviewID">
             <h3>Parlamus</h3>
-            <img class="thumbnail" src="images\Parlamus\SMH_Parlamus_thumb.JPG" alt="Screenshot html file: 'Parlamus Exemplarischer Ablauf'">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Parlamus\SMH_Parlamus_thumb.JPG" alt="Screenshot html file: 'Parlamus Exemplarischer Ablauf'">
             <h5>Casual Mobile Strategy Game</h5>
           </div>
 
@@ -351,7 +350,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('ParlamusDescription', this, 'ParlamusDivId', 'ParlamusPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -363,7 +362,7 @@
         <div class="oneThird projectDiv" id="MasterthesisDivId">
           <div class="projectPreviewDiv" id="MasterthesisPreviewID">
             <h3>Master thesis</h3>
-            <img class="thumbnail" src="images\MasterThesis\SMH_Masterthesis_Ravensburger_thumb.jpg" alt="Masterthesis Ravensburger: Boardgame with the tiptoi©">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\MasterThesis\SMH_Masterthesis_Ravensburger_thumb.jpg" alt="Masterthesis Ravensburger: Boardgame with the tiptoi©">
             <h5>Serious game with the tiptoi®</h5>
             © Ravensburger AG
           </div>
@@ -410,7 +409,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('MasterthesisDescription', this, 'MasterthesisDivId', 'MasterthesisPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -419,7 +418,7 @@
         <div class="oneThird projectDiv" id="SheepRollDivId">
           <div class="projectPreviewDiv" id="SheepRollPreviewID">
             <h3>Sheep Roll</h3>
-            <img class="thumbnail" src="images\Sheep\SMH_SheepRoll_thumb.jpeg" alt="In Game Screenshot: SheepRoll">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Sheep\SMH_SheepRoll_thumb.jpeg" alt="In Game Screenshot: SheepRoll">
             <h5>Puzzle Game</h5>
           </div>
 
@@ -462,7 +461,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('SheepRollDescription', this, 'SheepRollDivId', 'SheepRollPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
 
@@ -472,7 +471,7 @@
         <div class="oneThird projectDiv" id="HamstermarktDivId">
           <div class="projectPreviewDiv" id="HamstermarktPreviewID">
             <h3>Hamstermarkt</h3>
-            <img class="thumbnail" src="images\Hamster\SMH_Hamstermark_thumb.png" alt="Hamstermarkt">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Hamster\SMH_Hamstermark_thumb.png" alt="Hamstermarkt">
             <h5>Competitive Maze Runner</h5>
           </div>
 
@@ -514,7 +513,7 @@
             </div>
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('HamstermarktDescription', this, 'HamstermarktDivId', 'HamstermarktPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -523,7 +522,7 @@
         <div class="oneThird projectDiv" id="SchauMalDivId">
           <div class="projectPreviewDiv" id="SchauMalPreviewID">
             <h3>Schau mal</h3>
-            <img class="thumbnail" src="images\Schau\SMH_SchauMal_thumb.png" alt="Schau Mal in Trier">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Schau\SMH_SchauMal_thumb.png" alt="Schau Mal in Trier">
             <h5>Interactive installation</h5>
           </div>
 
@@ -586,7 +585,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('SchauMalDescription', this, 'SchauMalDivId', 'SchauMalPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -595,7 +594,7 @@
         <div class="oneThird projectDiv" id="LutherDivId">
           <div class="projectPreviewDiv" id="LutherPreviewID">
             <h3>aproposluther</h3>
-            <img class="thumbnail" src="images\Luther\SMH_luther_thumb.png" alt="aproposluther in Trier">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Luther\SMH_luther_thumb.png" alt="aproposluther in Trier">
             <h5>Interactive Luther exhibition</h5>
           </div>
 
@@ -660,7 +659,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('LutherDescription', this, 'LutherDivId', 'LutherPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -669,7 +668,7 @@
         <div class="oneThird projectDiv" id="GeliefertDivId">
           <div class="projectPreviewDiv" id="GeliefertPreviewID"> 
             <h3>Geliefert</h3>
-            <img class="thumbnail" src="images\Geliefert\SMH_Geliefert_thumb.png" alt="Board Game Geliefert">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Geliefert\SMH_Geliefert_thumb.png" alt="Board Game Geliefert">
             <h5>Transportation game</h5>
           </div>
 
@@ -712,7 +711,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('GeliefertDescription', this, 'GeliefertDivId', 'GeliefertPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -725,7 +724,7 @@
         <div class="oneThird projectDiv" id="UniverseDivId">
           <div class="projectPreviewDiv" id="UniversePreviewID">
             <h3>Your Universe</h3>
-            <img class="thumbnail" src="images\Universe\SMH_YourUniverse_thumb.jpg" alt="Your Universe thumbnail">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Universe\SMH_YourUniverse_thumb.jpg" alt="Your Universe thumbnail">
             <h5>2D Health Game on Depression | Game Jam</h5>
           </div>
 
@@ -771,7 +770,7 @@
             </div>
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('UniverseDescription', this, 'UniverseDivId', 'UniversePreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -780,7 +779,7 @@
         <div class="oneThird projectDiv" id="CouchTreeDivId">
           <div class="projectPreviewDiv" id="CouchTreePreviewID">
             <h3>Couch Tree App</h3>
-            <img class="thumbnail" src="images\CouchTree\SMH_CouchtreeApp_thumb.jpg" alt="Couch Tree App, 3 in game screenshots">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\CouchTree\SMH_CouchtreeApp_thumb.jpg" alt="Couch Tree App, 3 in game screenshots">
             <h5>Your App to plant at home | Game Jam</h5>
           </div>
 
@@ -821,7 +820,7 @@
             </div>
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('CouchTreeDescription', this, 'CouchTreeDivId', 'CouchTreePreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -830,7 +829,7 @@
         <div class="oneThird projectDiv" id="HornDivId">
           <div class="projectPreviewDiv" id="HornPreviewID">
             <h3>H.O.R.N. of Happiness</h3>
-            <img class="thumbnail" src="images\HORN\SMH_HORN_thumb.png" alt="Table Top Game H.O.R.N. of Happiness">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\HORN\SMH_HORN_thumb.png" alt="Table Top Game H.O.R.N. of Happiness">
             <h5>Analog RPG | GGJ 2018</h5>
           </div>
 
@@ -873,7 +872,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('HornDescription', this, 'HornDivId', 'HornPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>
@@ -882,7 +881,7 @@
         <div class="oneThird projectDiv" id="NightAsDayDivId">
           <div class="projectPreviewDiv" id="NightPreviewID">
             <h3>Night as Day</h3>
-            <img class="thumbnail" src="images\Night\SMH_night-day_thumb.png" alt="2D RPG Night as Day Thumbnail">
+            <img onclick="toggleDescription(this)" class="thumbnail" src="images\Night\SMH_night-day_thumb.png" alt="2D RPG Night as Day Thumbnail">
             <h5>2D RPG | GGJ 2022</h5>
           </div>
 
@@ -923,7 +922,7 @@
 
           </div>
 
-          <button class="toggleDescriptionButton" onclick="toggleDescription('NightAsDayDescription', this, 'NightAsDayDivId', 'NightPreviewID')">
+          <button class="toggleDescriptionButton" onclick="toggleDescription(this)">
             Read more
           </button>
         </div>

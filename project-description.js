@@ -1,46 +1,63 @@
 
-function toggleDescription(projectDescriptionId, button, projectDivId, projectPreviewID){
-  const descriptionDiv = document.getElementById(projectDescriptionId);
-  const projectDiv = document.getElementById(projectDivId);
+function toggleDescription(clickedElement) {
+  const parentElement = findParentProjectDiv(clickedElement);
+  
+  if (parentElement === null)
+  {
+    console.error(`Could not find parent of clicked element: ${clickedElement}`);
+    return;
+  }
 
-  /* Übergeben der ID aus dem Button, der dort im html in der Funktion gesetzt wird */
-
-    if (window.getComputedStyle(descriptionDiv).visibility === "collapse") {
-
-        showDescription(projectDescriptionId, projectPreviewID);
-        button.innerText = "Show less";
-        projectDiv.classList.remove("oneThird");
-        projectDiv.classList.add("fullWidth");
-        projectDiv.style.background = "rgba(255, 217, 107, 0.2)";
-
-    }
-    else {
-        hideDescription(projectDescriptionId, projectPreviewID);
-        button.innerText = "Read more";
-        projectDiv.classList.add("oneThird");
-        projectDiv.classList.remove("fullWidth");
-        projectDiv.style.background = "none";
-    }
+  const projectPreviewDiv = parentElement.getElementsByClassName("projectPreviewDiv")[0];
+  const descriptionDiv = parentElement.getElementsByClassName("descriptionDiv")[0];
+  const toggleDescriptionButton = parentElement.getElementsByClassName("toggleDescriptionButton")[0];
+  
+  if (window.getComputedStyle(descriptionDiv).visibility === "collapse") {
+    showDescription(descriptionDiv, projectPreviewDiv, parentElement);
+    toggleDescriptionButton.innerText = "Show less";
+  }
+  else {
+    hideDescription(descriptionDiv, projectPreviewDiv, parentElement);
+    toggleDescriptionButton.innerText = "Read more";
+  }
 }
 
-function showDescription(projectDescriptionId, projectPreviewID) {
-  const descriptionDiv = document.getElementById(projectDescriptionId);
-  const projectPreviewDiv = document.getElementById(projectPreviewID)
+/***
+ * @param {HTMLElement} element 
+ */
 
+function findParentProjectDiv(element)
+{
+  let parentElement = element.parentElement;
+
+  while (parentElement !== null && !parentElement.classList.contains('projectDiv'))
+  {
+    parentElement = parentElement.parentElement;
+  }
+
+  return parentElement;
+}
+
+function showDescription(descriptionDiv, projectPreviewDiv, projectDiv) {
   descriptionDiv.style.visibility = "visible";
   descriptionDiv.style.display = "flex";
   
   projectPreviewDiv.style.display = "none";
   projectPreviewDiv.style.visibility = "collapse";
+
+  projectDiv.classList.remove("oneThird");
+  projectDiv.classList.add("fullWidth");
+  projectDiv.style.background = "rgba(255, 217, 107, 0.2)";
 }
 
-function hideDescription(projectDescriptionId, projectPreviewID) {
-  const descriptionDiv = document.getElementById(projectDescriptionId);
-  const projectPreviewDiv = document.getElementById(projectPreviewID)
-  
+function hideDescription(descriptionDiv, projectPreviewDiv, projectDiv) {
   descriptionDiv.style.visibility = "collapse";
   descriptionDiv.style.display = "none";
 
   projectPreviewDiv.style.visibility = "visible";
   projectPreviewDiv.style.display = "block";
+
+  projectDiv.classList.add("oneThird");
+  projectDiv.classList.remove("fullWidth");
+  projectDiv.style.background = "none";
 }

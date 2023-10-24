@@ -41,6 +41,9 @@ body{
   word-wrap: break-word;
   background-color: #FFD96B;
   line-height: 1.44;
+  position: relative;
+  min-height: 100%;
+  top: 0px;
 }
 
 h1 {

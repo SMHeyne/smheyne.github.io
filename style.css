@@ -752,7 +752,8 @@ input:checked + .slider .off
 .modal img {
   max-width: 95vw;
   height: auto;
-  object-fit: cover;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .descriptionDiv{

@@ -430,6 +430,11 @@ body {
   text-decoration: none;
 }
 
+.menu-p a:hover{
+  background-color: #ffda6b8c;
+  border-radius: 5px;
+}
+
 .currentPage{
   background-color: #FFD96B50;
   border-radius: 5px;
@@ -490,7 +495,6 @@ button.nav-toggle{
   width: 100%;
   max-width: 20vw;
   height: auto;
-  max-height: 50vh;
 }
 
 .logo{

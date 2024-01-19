@@ -266,6 +266,7 @@ hr{
   border-color: #216966;
 }
 
+
 /*_______BROWSER________*/
 
 body {
@@ -744,7 +745,7 @@ input:checked + .slider .off
 }
 
 .imageDescription{
-  margin-top: 0.8rem;
+  margin-top: 0.2rem;
   margin-left: 0.5rem;
 }
 

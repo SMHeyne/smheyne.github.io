@@ -9,12 +9,12 @@ This website contains my portfolio projects, my resume and more information abou
 
 ## Author
 
-- Sabine M. Heyne @smheyne
+- Sabine M. Heyne [@smheyne](https://github.com/SMHeyne)
 
 ## Licenses
 
  smheyne.de
-Copyright (C) 2024 Sabine M. Hene
+Copyright (C) 2024 Sabine M. Heyne
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or *(at your option)* any later version.
 

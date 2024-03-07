@@ -60,4 +60,5 @@ function hideDescription(descriptionDiv, projectPreviewDiv, projectDiv) {
   projectDiv.classList.add("oneThird");
   projectDiv.classList.remove("fullWidth");
   projectDiv.style.background = "none";
+  projectDiv.scrollIntoView(true);
 }

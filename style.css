@@ -518,6 +518,7 @@ button.nav-toggle{
   position: absolute;
   right: 5rem;
   top: 9rem;
+  max-width: 20vw;
   max-height: 60vh;
   min-height: 20vh;
   z-index: 0;

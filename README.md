@@ -14,7 +14,7 @@ This website contains my portfolio projects, my resume and more information abou
 ## Licenses
 
  smheyne.de
-Copyright (C) 2024 Sabine M. Heyne
+Copyright (C) 2026 Sabine M. Heyne
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or *(at your option)* any later version.
 
@@ -25,6 +25,10 @@ You should have received a copy of the GNU Affero General Public License along w
 ### Portfolio contents and images
 
 The files, images and contents can NOT be used and are NOT shared under the GNU Affero General Public License.
+
+##### Metacore Oy
+
+All files within the folder `images/MergeMansion` are property of Metacore Oy.
 
 ##### Wondershop Oy
 
